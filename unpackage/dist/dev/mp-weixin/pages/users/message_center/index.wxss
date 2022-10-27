@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.list.data-v-730fb130 {
+  overflow: hidden;
+  padding-top: 100rpx;
+}
+.list .item.data-v-730fb130 {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 30rpx 30rpx;
+  margin: 10rpx 20rpx;
+  border-radius: 12rpx;
+  box-shadow: 0px 0px 1px 0px rgba(235, 214, 214, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(235, 214, 214, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(235, 214, 214, 0.75);
+}
+.list .item ~ .item.data-v-730fb130 {
+  border-top: 1rpx solid #f5f5f5;
+}
+.list .item .image.data-v-730fb130 {
+  border-radius: 50%;
+}
+.list .image-wrap.data-v-730fb130 {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  position: relative;
+}
+.list .image-wrap .no-look.data-v-730fb130 {
+  position: absolute;
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 50%;
+  background-color: #1ABB1D;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 999;
+}
+.list .image.data-v-730fb130 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.list .text-wrap.data-v-730fb130 {
+  flex: 1;
+  min-width: 0;
+  margin-left: 20rpx;
+}
+.list .name-wrap.data-v-730fb130 {
+  display: flex;
+  align-items: center;
+  font-size: 20rpx;
+  color: #ccc;
+}
+.list .name.data-v-730fb130 {
+  flex: 1;
+  min-width: 0;
+  margin-right: 20rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  color: #333;
+}
+.list .info-wrap.data-v-730fb130 {
+  display: flex;
+  align-items: center;
+  margin-top: 18rpx;
+}
+.list .info.data-v-730fb130 {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 24rpx;
+  color: #999;
+}
+.list .num.data-v-730fb130 {
+  min-width: 32rpx;
+  height: 32rpx;
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+  background-color: #e93323;
+  font-size: 20rpx;
+  line-height: 32rpx;
+  text-align: center;
+  color: #fff;
+}
+.empty-wrap.data-v-730fb130 {
+  font-size: 26rpx;
+  text-align: center;
+  color: #999;
+}
+.empty-wrap .image-wrap.data-v-730fb130 {
+  width: 414rpx;
+  height: 436rpx;
+  padding-top: 100rpx;
+  margin: 0rpx auto 0;
+}
+.empty-wrap .image.data-v-730fb130 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main.data-v-730fb130 {
+  position: relative;
+}
+.top-tabs.data-v-730fb130 {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  padding: 20rpx 0;
+  margin-bottom: 10rpx;
+  z-index: 1000;
+}
+.tabs.data-v-730fb130 {
+  display: flex;
+  align-items: center;
+  padding: 4rpx 15rpx;
+  margin: 0 20rpx;
+}
+.btborder.data-v-730fb130 {
+  color: #fff;
+  background-color: var(--view-theme);
+  border-radius: 30rpx;
+}
+

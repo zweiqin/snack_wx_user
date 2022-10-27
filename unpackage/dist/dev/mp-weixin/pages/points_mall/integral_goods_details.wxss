@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.generate-posters {
+  width: 100%;
+  height: 170rpx;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 300;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  border-top: 1rpx solid #eee;
+}
+.generate-posters.on {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.generate-posters .item {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+}
+.generate-posters .item .iconfont {
+  font-size: 80rpx;
+  color: #5eae72;
+}
+.generate-posters .item .iconfont.icon-haibao {
+  color: #5391f1;
+}
+.navbar .header {
+  height: 96rpx;
+  font-size: 30rpx;
+  color: #050505;
+  background-color: #fff;
+  padding-right: 95rpx;
+}
+.navbar .header .item {
+  position: relative;
+  margin: 0 25rpx;
+}
+.navbar .header .item.on:before {
+  position: absolute;
+  width: 60rpx;
+  height: 5rpx;
+  background-repeat: no-repeat;
+  content: "";
+  background-image: linear-gradient(to right, #ff3366 0%, #ff6533 100%);
+  bottom: -10rpx;
+  left: 50%;
+  margin-left: -28rpx;
+}
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+}
+.navbar .navbarH {
+  position: relative;
+}
+.navbar .navbarH .navbarCon {
+  position: absolute;
+  bottom: 0;
+  height: 100rpx;
+  width: 100%;
+}
+.icon-xiangzuo {
+  /* color: #000;
+		position: fixed;
+		font-size: 40rpx;
+		width: 100rpx;
+		height: 56rpx;
+		line-height: 54rpx;
+		z-index: 1000;
+		left: 33rpx; */
+}
+.product-con .nav {
+  width: 100%;
+  height: 100rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.product-con .nav .money {
+  font-size: 28rpx;
+  color: #e93323;
+  font-weight: bold;
+}
+.product-con .nav .money image {
+  width: 34rpx;
+  height: 34rpx;
+}
+.product-con .nav .money .num {
+  font-size: 48rpx;
+  padding-left: 16rpx;
+}
+.product-con .nav .money .y-money {
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+.product-con .nav .timeItem {
+  font-size: 20rpx;
+  color: #fff;
+  text-align: center;
+}
+.product-con .nav .timeItem .timeCon {
+  margin-top: 10rpx;
+}
+.product-con .nav .timeItem .timeCon .num {
+  padding: 0 7rpx;
+  font-size: 22rpx;
+  color: #ff3d3d;
+  background-color: #fff;
+  border-radius: 2rpx;
+}
+.product-con .nav .timeState {
+  font-size: 28rpx;
+  color: #fff;
+}
+.product-con .nav .iconfont {
+  color: #fff;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.product-con .wrapper {
+  padding: 0 32rpx 32rpx 32rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.product-con .wrapper .introduce {
+  margin: 0;
+}
+.product-con .wrapper .introduce .iconfont {
+  font-size: 37rpx;
+  color: #515151;
+}
+.product-con .wrapper .label {
+  display: flex;
+  justify-content: space-between;
+  margin: 18rpx 0 0 0;
+  font-size: 24rpx;
+  color: #82848f;
+}
+.product-con .footer {
+  padding: 0 20rpx 0 30rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 277;
+  border-top: 1rpx solid #f0f0f0;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: calc(100rpx+ constant(safe-area-inset-bottom));
+  height: calc(100rpx + env(safe-area-inset-bottom));
+}
+.product-con .footer .item {
+  width: 100rpx;
+  font-size: 18rpx;
+  color: #666;
+}
+.product-con .footer .item .iconfont {
+  text-align: center;
+  font-size: 40rpx;
+}
+.product-con .footer .item .iconfont.icon-shoucang1 {
+  color: #f00;
+}
+.product-con .footer .item .iconfont.icon-gouwuche1 {
+  font-size: 40rpx;
+  position: relative;
+}
+.product-con .footer .item .iconfont.icon-gouwuche1 .num {
+  color: #fff;
+  position: absolute;
+  font-size: 18rpx;
+  padding: 2rpx 8rpx 3rpx;
+  border-radius: 200rpx;
+  top: -10rpx;
+  right: -10rpx;
+}
+.product-con .footer .bnt {
+  width: 100%;
+  height: 76rpx;
+}
+.product-con .footer .bnt .bnts {
+  width: 100%;
+  text-align: center;
+  line-height: 76rpx;
+  color: #fff;
+  font-size: 28rpx;
+}
+.product-con .footer .bnt .joinCart {
+  border-radius: 50rpx 0 0 50rpx;
+  background-image: linear-gradient(to right, #fea10f 0%, #fa8013 100%);
+}
+.product-con .footer .bnt .buy {
+  border-radius: 50rpx;
+  background-color: var(--view-theme);
+}
+.product-con .footer .bnt .no-goods {
+  border-radius: 50rpx;
+  background-color: #cccccc;
+}
+.product-con .conter {
+  display: block;
+  padding-bottom: 100rpx;
+}
+.product-con .conter ._img {
+  display: block;
+}
+.bg-color-hui {
+  background: #bbbbbb !important;
+}
+.canvas {
+  width: 750px;
+  height: 1190px;
+}
+.poster-pop {
+  width: 450rpx;
+  height: 714rpx;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 300;
+  top: 50%;
+  margin-top: -377rpx;
+}
+.poster-pop image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.poster-pop .close {
+  width: 46rpx;
+  height: 75rpx;
+  position: fixed;
+  right: 0;
+  top: -73rpx;
+  display: block;
+}
+.poster-pop .save-poster {
+  background-color: #df2d0a;
+  font-size: ：22rpx;
+  color: #fff;
+  text-align: center;
+  height: 76rpx;
+  line-height: 76rpx;
+  width: 100%;
+}
+.poster-pop .keep {
+  color: #fff;
+  text-align: center;
+  font-size: 25rpx;
+  margin-top: 10rpx;
+}
+ .mask {
+  z-index: 99 !important;
+}
+.mask1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 288;
+}
+.home-nav {
+  color: #fff;
+  position: fixed;
+  font-size: 33rpx;
+  width: 56rpx;
+  height: 56rpx;
+  z-index: 99;
+  left: 33rpx;
+  background: rgba(190, 190, 190, 0.5);
+  border-radius: 50%;
+}
+.home-nav.on {
+  background: unset;
+  color: #333;
+}
+.home-nav .line {
+  width: 1rpx;
+  height: 24rpx;
+  background: rgba(255, 255, 255, 0.25);
+}
+.home-nav .icon-xiangzuo {
+  width: auto;
+  font-size: 28rpx;
+}
+.share-box {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.share-box image {
+  width: 100%;
+  height: 100%;
+}
+.df {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.attrImg {
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 6rpx;
+  display: block;
+  margin-right: 14rpx;
+}
+.switchTxt {
+  height: 60rpx;
+  flex: 1;
+  line-height: 60rpx;
+  box-sizing: border-box;
+  background: #eeeeee;
+  padding: 0 10rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.attribute {
+  padding: 10rpx 30rpx;
+}
+.attribute .line1 {
+  width: 600rpx;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flexs {
+  display: flex;
+}
+.attr-txt {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 130rpx;
+}
+

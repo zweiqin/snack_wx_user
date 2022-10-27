@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.default {
+  width: 690rpx;
+  height: 300rpx;
+  border-radius: 14rpx;
+  margin: 26rpx auto 0 auto;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 300rpx;
+}
+.default .iconfont {
+  font-size: 50rpx;
+}
+.seckill {
+  width: 690rpx;
+  height: 410rpx;
+  margin: 0 auto;
+  padding-top: 35rpx;
+  background-color: #ffffff;
+}
+.seckill .title .name {
+  font-size: 32rpx;
+  color: #282828;
+  font-weight: bold;
+}
+.seckill .title .point {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #fc4141;
+  margin-left: 16rpx;
+}
+.seckill .title .time {
+  font-size: 24rpx;
+}
+.seckill .title .time .styleAll {
+  width: 35rpx;
+  height: 35rpx;
+  background-color: rgba(252, 60, 62, 0.09);
+  border-radius: 6rpx;
+  color: #e93323;
+  text-align: center;
+}
+.seckill .title .time .red ~ .red {
+  color: #333333;
+  padding: 0 4rpx;
+}
+.seckill .title .more {
+  font-size: 26rpx !important;
+  color: #333;
+}
+.seckill .title .more .iconfont {
+  margin-left: 8rpx;
+  font-size: 26rpx !important;
+  vertical-align: 2rpx;
+}
+.seckill .conter {
+  width: 100%;
+  height: 320rpx;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  margin-top: 26rpx;
+}
+.seckill .conter .itemCon {
+  display: inline-block;
+  width: 174rpx;
+  margin-right: 24rpx;
+}
+.seckill .conter .itemCon .item {
+  width: 100%;
+}
+.seckill .conter .itemCon .item .pictrue {
+  width: 100%;
+  height: 174rpx;
+  border-radius: 6rpx;
+}
+.seckill .conter .itemCon .item .pictrue image {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rpx;
+}
+.seckill .conter .itemCon .item .name {
+  font-size: 24rpx;
+  color: #333333;
+  margin-top: 10rpx;
+}
+.seckill .conter .itemCon .item .money .y_money {
+  font-size: 20rpx;
+  color: #999999;
+  text-decoration: line-through;
+}
+.seckill .conter .itemCon .item .money .x_money {
+  color: #FD502F;
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-top: 3rpx;
+}
+.seckill .conter .itemCon .item .money .x_money .num {
+  font-size: 28rpx;
+}
+

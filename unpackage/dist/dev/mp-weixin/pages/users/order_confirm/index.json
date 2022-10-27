@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "提交订单",
+  "usingComponents": {
+    "uni-forms": "/uni_modules/uni-forms/components/uni-forms/uni-forms",
+    "uni-forms-item": "/uni_modules/uni-forms/components/uni-forms-item/uni-forms-item",
+    "uni-easyinput": "/uni_modules/uni-easyinput/components/uni-easyinput/uni-easyinput",
+    "uni-card": "/uni_modules/uni-card/components/uni-card/uni-card",
+    "w-time-picker": "/components/w-time-picker/w-time-picker",
+    "payment": "/components/payment/index",
+    "invoice-picker": "/components/invoicePicker/index",
+    "coupon-list-window": "/components/couponListWindow/index",
+    "address-window": "/components/addressWindow/index",
+    "order-goods": "/components/orderGoods/index",
+    "home": "/components/home/index",
+    "authorize": "/components/Authorize"
+  }
+}

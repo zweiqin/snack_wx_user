@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.promoter-order .list .item .title.data-v-6c1cbc96 {
+  height: 133rpx;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.promoter-order .list .item .title .data.data-v-6c1cbc96 {
+  font-size: 28rpx;
+  color: #282828;
+  margin-bottom: 5rpx;
+}
+.promoter-order .list .item .listn .itenm.data-v-6c1cbc96 {
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+.promoter-order .list .item .listn .itenm .more-record.data-v-6c1cbc96 {
+  color: #999;
+  font-size: 24rpx;
+}
+.promoter-order .list .item .listn .itenm .more-record .more-record-list.data-v-6c1cbc96 {
+  padding: 20rpx 30rpx;
+  border-top: 1px solid #f2f2f2;
+}
+.promoter-order .list .item .listn .itenm .more-record .more-record-list .more-record-box.data-v-6c1cbc96 {
+  display: flex;
+  justify-content: space-between;
+}
+.promoter-order .list .item .listn .itenm ~ .itenm.data-v-6c1cbc96 {
+  margin-top: 12rpx;
+}
+.promoter-order .list .item .listn .itenm .top.data-v-6c1cbc96 {
+  margin-left: 30rpx;
+  padding-right: 30rpx;
+  border-bottom: 1rpx solid #eee;
+  height: 100rpx;
+}
+.promoter-order .list .item .listn .itenm .top .pictxt.data-v-6c1cbc96 {
+  width: 320rpx;
+}
+.promoter-order .list .item .listn .itenm .top .pictxt .text.data-v-6c1cbc96 {
+  width: 230rpx;
+  font-size: 30rpx;
+  color: #282828;
+}
+.promoter-order .list .item .listn .itenm .top .pictxt .pictrue.data-v-6c1cbc96 {
+  width: 66rpx;
+  height: 66rpx;
+}
+.promoter-order .list .item .listn .itenm .top .pictxt .pictrue image.data-v-6c1cbc96 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3rpx solid #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 15rpx #aaa;
+}
+.promoter-order .list .item .listn .itenm .top .money.data-v-6c1cbc96 {
+  font-size: 28rpx;
+}
+.promoter-order .list .item .listn .itenm .bottom.data-v-6c1cbc96 {
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  position: relative;
+}
+.promoter-order .list .item .listn .itenm .bottom .more.data-v-6c1cbc96 {
+  font-size: 24rpx;
+  position: absolute;
+  right: 12rpx;
+  bottom: 24rpx;
+}
+.promoter-order .list .item .listn .itenm .bottom .more .iconfont.data-v-6c1cbc96 {
+  font-size: 22rpx;
+  margin-left: 5rpx;
+}
+.promoter-order .list .item .listn .itenm .bottom .name.data-v-6c1cbc96 {
+  color: #999;
+}
+

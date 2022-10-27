@@ -1,0 +1,465 @@
+
+.zb-code {
+  position: relative;
+}
+.zb-code-canvas {
+  position: fixed;
+  top: -99999rpx;
+  left: -99999rpx;
+  z-index: -99999;
+}
+
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.generate-posters {
+  width: 100%;
+  height: 170rpx;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 300;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  border-top: 1rpx solid #eee;
+}
+.generate-posters.on {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.generate-posters .item {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+}
+.generate-posters .item .iconfont {
+  font-size: 80rpx;
+  color: #5eae72;
+}
+.generate-posters .item .iconfont.icon-haibao {
+  color: #5391f1;
+}
+.bargain .bargainGang .open {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 30rpx;
+}
+.bargain .bargainGang .open .iconfont {
+  font-size: 25rpx;
+  margin: 5rpx 0 0 10rpx;
+}
+.bargain .icon-xiangzuo {
+  font-size: 40rpx;
+  color: #fff;
+  position: fixed;
+  top: 56rpx;
+  left: 30rpx;
+  z-index: 99;
+  font-size: 36rpx;
+}
+.bargain .header {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 572rpx;
+  margin: 0 auto;
+  padding-top: 340rpx;
+  position: relative;
+}
+.bargain .header .pictxt {
+  margin: -60rpx auto 0 auto;
+  font-size: 26rpx;
+  color: #fff;
+}
+.bargain .header .pictxt .pictrue {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 30rpx;
+}
+.bargain .header .pictxt .pictrue image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+}
+.bargain .header .pictxt .text text {
+  margin-left: 20rpx;
+}
+.bargain .header .time {
+  width: 440rpx;
+  font-size: 22rpx;
+  text-align: center;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  margin-left: -220rpx;
+  top: 298rpx;
+}
+.bargain .header .time .red {
+  color: var(--view-theme);
+}
+.bargain .header .people {
+  text-align: center;
+  color: #fff;
+  font-size: 20rpx;
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  top: 40rpx;
+}
+.bargain .header .time text {
+  color: #333;
+}
+.bargain .wrapper,
+.bargain .bargainGang,
+.bargain .goodsDetails {
+  width: 660rpx;
+  border: 6rpx solid #fc8b42;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin: -190rpx auto 0 auto;
+  box-sizing: border-box;
+  padding: 0 24rpx 47rpx 24rpx;
+  position: relative;
+}
+.bargain .wrapper .pictxt {
+  margin: 26rpx 0 37rpx 0;
+}
+.bargain .wrapper .pictxt .pictrue {
+  width: 180rpx;
+  height: 180rpx;
+  position: relative;
+}
+.bargain .wrapper .pictxt .pictrue image {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rpx;
+}
+.bargain .wrapper .pictxt .text {
+  width: 395rpx;
+  font-size: 28rpx;
+  color: #282828;
+  height: 180rpx;
+}
+.bargain .wrapper .pictxt .text .money {
+  font-weight: bold;
+  font-size: 24rpx;
+}
+.bargain .wrapper .pictxt .text .money .num {
+  font-size: 36rpx;
+}
+.bargain .wrapper .pictxt .text .successNum {
+  font-size: 22rpx;
+  color: #999;
+}
+.bargain .wrapper .cu-progress {
+  overflow: hidden;
+  height: 12rpx;
+  background-color: #eee;
+  width: 100%;
+  border-radius: 20rpx;
+}
+.bargain .wrapper .cu-progress .bg-red {
+  width: 0;
+  height: 100%;
+  transition: width 0.6s ease;
+  border-radius: 20rpx;
+  background-image: linear-gradient(to right, var(--view-minorColor) 0%, var(--view-theme) 100%);
+}
+.bargain .wrapper .money {
+  font-size: 22rpx;
+  color: #999;
+  margin-top: 15rpx;
+  color: var(--view-priceColor);
+}
+.bargain .wrapper .bargainSuccess {
+  font-size: 26rpx;
+  color: #282828;
+  text-align: center;
+}
+.bargain .wrapper .bargainSuccess .iconfont {
+  font-size: 45rpx;
+  color: #54c762;
+  padding-right: 18rpx;
+  vertical-align: -5rpx;
+}
+.bargain .wrapper .bargainBnt {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #fff;
+  width: 600rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: var(--view-theme);
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 32rpx;
+}
+.bargain .wrapper .bargainBnt.on {
+  border: 2rpx solid var(--view-theme);
+  color: var(--view-theme);
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  width: 596rpx;
+  height: 76rpx;
+}
+.bargain .wrapper .bargainBnt.grey {
+  color: #fff;
+  background-image: linear-gradient(to right, #bbbbbb 0%, #bbbbbb 100%);
+}
+.bargain .wrapper .tip {
+  font-size: 22rpx;
+  color: #999;
+  text-align: center;
+  margin-top: 20rpx;
+}
+.bargain .wrapper .tip .num {
+  color: var(--view-theme);
+}
+.bargain .wrapper .lock,
+.bargain .bargainGang .lock,
+.bargain .goodsDetails .lock {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 548rpx;
+  height: 66rpx;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -43rpx;
+  z-index: 5;
+}
+.bargain .bargainGang {
+  margin: 13rpx auto 0 auto;
+}
+.bargain .bargainGang .title,
+.bargain .goodsDetails .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  height: 80rpx;
+  margin-top: 30rpx;
+  color: var(--view-theme);
+}
+.bargain .bargainGang .title .pictrue,
+.bargain .goodsDetails .title .pictrue {
+  width: 46rpx;
+  height: 24rpx;
+}
+.bargain .bargainGang .title .pictrue.on,
+.bargain .goodsDetails .title .pictrue.on {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.bargain .bargainGang .title .pictrue image,
+.bargain .goodsDetails .title .pictrue image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.bargain .bargainGang .title .titleCon,
+.bargain .goodsDetails .title .titleCon {
+  margin: 0 20rpx;
+}
+.bargain .bargainGang .list .item {
+  border-bottom: 1rpx dashed #ddd;
+  height: 112rpx;
+}
+.bargain .bargainGang .list .item .pictxt {
+  width: 310rpx;
+}
+.bargain .bargainGang .list .item .pictxt .pictrue {
+  width: 70rpx;
+  height: 70rpx;
+}
+.bargain .bargainGang .list .item .pictxt .pictrue image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2rpx solid var(--view-theme);
+}
+.bargain .bargainGang .list .item .pictxt .text {
+  width: 225rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+.bargain .bargainGang .list .item .pictxt .text .name {
+  font-size: 25rpx;
+  color: #282828;
+  margin-bottom: 7rpx;
+}
+.bargain .bargainGang .list .item .money {
+  font-size: 25rpx;
+  color: var(--view-theme);
+}
+.bargain .bargainGang .list .item .money .iconfont {
+  font-size: 35rpx;
+  vertical-align: middle;
+  margin-right: 10rpx;
+}
+.bargain .bargainGang .load {
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+  color: var(--view-theme);
+}
+.bargain .goodsDetails {
+  margin: 13rpx auto 0 auto;
+}
+.bargain .goodsDetails ~ .goodsDetails {
+  margin-bottom: 50rpx;
+}
+.bargain .goodsDetails .conter {
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.bargain .goodsDetails .conter image {
+  width: 100% !important;
+  display: block !important;
+}
+.bargain .bargainTip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 560rpx;
+  margin-left: -280rpx;
+  z-index: 111;
+  border-radius: 20rpx;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  padding-bottom: 60rpx;
+  margin-top: -330rpx;
+}
+.bargain .bargainTip.on {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.bargain .bargainTip .pictrue {
+  width: 100%;
+  height: 321rpx;
+}
+.bargain .bargainTip .pictrue image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.bargain .bargainTip .cutOff {
+  font-size: 30rpx;
+  color: #666;
+  padding: 0 29rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.bargain .bargainTip .cutOff.on {
+  margin-top: 26rpx;
+}
+.bargain .bargainTip .help {
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40rpx;
+}
+.bargain .bargainTip .tipBnt {
+  font-size: 32rpx;
+  color: #fff;
+  width: 360rpx;
+  height: 82rpx;
+  border-radius: 41rpx;
+  background-color: var(--view-theme);
+  text-align: center;
+  line-height: 82rpx;
+  margin: 50rpx auto 0 auto;
+}
+.bargain_view {
+  width: 180rpx;
+  height: 48rpx;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  border-radius: 0 0 6rpx 6rpx;
+  position: absolute;
+  bottom: 0;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 48rpx;
+}
+.iconfonts {
+  font-size: 22rpx !important;
+}
+.wxParse-div {
+  width: auto !important;
+  height: auto !important;
+}
+.bargain .mask {
+  z-index: 100;
+}
+.share-box {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.share-box image {
+  width: 100%;
+  height: 100%;
+}
+.followCode .pictrue {
+  width: 500rpx;
+  height: 530rpx;
+  border-radius: 12px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250rpx;
+  margin-top: -360rpx;
+  position: fixed;
+  z-index: 10000;
+}
+.followCode .pictrue .code-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(data:image/png;base64,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);
+  background-size: 100% 100%;
+}
+.followCode .pictrue .imgs {
+  width: 310rpx;
+  height: 310rpx;
+  margin-top: 92rpx;
+}
+.followCode .mask {
+  z-index: 9999;
+}
+

@@ -1,0 +1,15 @@
+
+page {
+	background-color: #FFFFFF;
+}
+
+
+.title.data-v-e470f0b0 {
+	padding-top: 60rpx;
+	font-size: 30rpx;
+	text-align: center;
+}
+.cont.data-v-e470f0b0 {
+	padding: 50rpx 30rpx;
+}
+

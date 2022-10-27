@@ -1,0 +1,9 @@
+
+page.data-v-c32d824a{
+	background-color: #fff;
+}
+.content.data-v-c32d824a {
+	padding: 40rpx 30rpx;
+	line-height: 2;
+}
+

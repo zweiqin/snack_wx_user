@@ -1,0 +1,42 @@
+
+.Loads {
+  height: 80rpx;
+  font-size: 25rpx;
+  color: #000;
+}
+.Loads .iconfont {
+  font-size: 30rpx;
+  margin-right: 10rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+/*加载动画*/
+@-webkit-keyframes load {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes load {
+from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.loadingpic {
+  -webkit-animation: load 3s linear 1s infinite;
+          animation: load 3s linear 1s infinite;
+}
+.loading {
+  -webkit-animation: load linear 1s infinite;
+          animation: load linear 1s infinite;
+}
+

@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.data-v-fe1f759a uni-checkbox[disabled] .uni-checkbox-input {
+  background-color: #eee;
+}
+.alipaysubmit.data-v-fe1f759a {
+  display: none;
+}
+.order-submission .line.data-v-fe1f759a {
+  width: 100%;
+  height: 3rpx;
+}
+.order-submission .line image.data-v-fe1f759a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.order-submission .address.data-v-fe1f759a {
+  padding: 28rpx 30rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.order-submission .address .addressCon.data-v-fe1f759a {
+  width: 610rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.order-submission .address .addressCon .name.data-v-fe1f759a {
+  font-size: 30rpx;
+  color: #282828;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.order-submission .address .addressCon .name .phone.data-v-fe1f759a {
+  margin-left: 50rpx;
+}
+.order-submission .address .addressCon .default.data-v-fe1f759a {
+  margin-right: 12rpx;
+}
+.order-submission .address .addressCon .setaddress.data-v-fe1f759a {
+  color: #333;
+  font-size: 28rpx;
+}
+.order-submission .address .iconfont.data-v-fe1f759a {
+  font-size: 35rpx;
+  color: #707070;
+}
+.order-submission .allAddress.data-v-fe1f759a {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--view-theme) 0%, #f5f5f5 100%);
+  padding-top: 100rpx;
+}
+.order-submission .allAddress .nav.data-v-fe1f759a {
+  width: 710rpx;
+  margin: 0 auto;
+}
+.order-submission .allAddress .nav .item.data-v-fe1f759a {
+  width: 355rpx;
+}
+.order-submission .allAddress .nav .item.on.data-v-fe1f759a {
+  position: relative;
+  width: 250rpx;
+}
+.order-submission .allAddress .nav .item.on.data-v-fe1f759a::before {
+  position: absolute;
+  bottom: 0;
+  content: "快递配送";
+  font-size: 28rpx;
+  display: block;
+  height: 0;
+  width: 336rpx;
+  border-width: 0 20rpx 80rpx 0;
+  border-style: none solid solid;
+  border-color: transparent transparent #fff;
+  z-index: 2;
+  border-radius: 7rpx 30rpx 0 0;
+  text-align: center;
+  line-height: 80rpx;
+}
+.order-submission .allAddress .nav .item:nth-of-type(2).on.data-v-fe1f759a::before {
+  content: "到店自提";
+  border-width: 0 0 80rpx 20rpx;
+  border-radius: 30rpx 7rpx 0 0;
+}
+.order-submission .allAddress .nav .item.on2.data-v-fe1f759a {
+  position: relative;
+}
+.order-submission .allAddress .nav .item.on2.data-v-fe1f759a::before {
+  position: absolute;
+  bottom: 0;
+  content: "到店自提";
+  font-size: 28rpx;
+  display: block;
+  height: 0;
+  width: 400rpx;
+  border-width: 0 0 60rpx 60rpx;
+  border-style: none solid solid;
+  border-color: transparent transparent #f7c1bd;
+  border-radius: 40rpx 6rpx 0 0;
+  text-align: center;
+  line-height: 60rpx;
+}
+.order-submission .allAddress .nav .item:nth-of-type(1).on2.data-v-fe1f759a::before {
+  content: "快递配送";
+  border-width: 0 60rpx 60rpx 0;
+  border-radius: 6rpx 40rpx 0 0;
+}
+.order-submission .allAddress .address.data-v-fe1f759a {
+  width: 710rpx;
+  height: 150rpx;
+  margin: 0 auto;
+}
+.order-submission .allAddress .line.data-v-fe1f759a {
+  width: 710rpx;
+  margin: 0 auto;
+}
+.order-submission .wrapper .item .discount .placeholder.data-v-fe1f759a {
+  color: #ccc;
+}
+.placeholder-textarea.data-v-fe1f759a {
+  position: relative;
+}
+.placeholder-textarea .placeholder.data-v-fe1f759a {
+  position: absolute;
+  color: #ccc;
+  top: 26rpx;
+  left: 30rpx;
+}
+.order-submission .wrapper.data-v-fe1f759a {
+  background-color: #fff;
+  margin-top: 13rpx;
+}
+.order-submission .wrapper .item.data-v-fe1f759a {
+  padding: 27rpx 30rpx;
+  font-size: 30rpx;
+  color: #282828;
+  border-bottom: 1px solid #f0f0f0;
+}
+.order-submission .wrapper .item .discount.data-v-fe1f759a {
+  font-size: 30rpx;
+  color: #999;
+}
+.order-submission .wrapper .item .discount input.data-v-fe1f759a {
+  text-align: end;
+}
+.order-submission .wrapper .item .discount .iconfont.data-v-fe1f759a {
+  color: #515151;
+  font-size: 30rpx;
+  margin-left: 15rpx;
+}
+.order-submission .wrapper .item .discount .num.data-v-fe1f759a {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.order-submission .wrapper .item .shipping.data-v-fe1f759a {
+  font-size: 30rpx;
+  color: #999;
+  position: relative;
+  padding-right: 58rpx;
+}
+.order-submission .wrapper .item .shipping .iconfont.data-v-fe1f759a {
+  font-size: 35rpx;
+  color: #707070;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-left: 30rpx;
+}
+.order-submission .wrapper .item textarea.data-v-fe1f759a {
+  background-color: #f9f9f9;
+  width: 690rpx;
+  height: 140rpx;
+  border-radius: 3rpx;
+  margin-top: 30rpx;
+  padding: 25rpx 28rpx;
+  box-sizing: border-box;
+}
+.order-submission .wrapper .item .placeholder.data-v-fe1f759a {
+  color: #ccc;
+}
+.order-submission .wrapper .item .list.data-v-fe1f759a {
+  margin-top: 35rpx;
+}
+.order-submission .moneyList.data-v-fe1f759a {
+  margin-top: 12rpx;
+  background-color: #fff;
+  padding: 30rpx;
+}
+.order-submission .moneyList .item.data-v-fe1f759a {
+  font-size: 28rpx;
+  color: #282828;
+}
+.order-submission .moneyList .item ~ .item.data-v-fe1f759a {
+  margin-top: 20rpx;
+}
+.order-submission .moneyList .item .money.data-v-fe1f759a {
+  color: #868686;
+}
+.order-submission .footer.data-v-fe1f759a {
+  width: 100%;
+  height: 100rpx;
+  background-color: #fff;
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.order-submission .footer .settlement.data-v-fe1f759a {
+  font-size: 30rpx;
+  color: #fff;
+  width: 240rpx;
+  height: 70rpx;
+  background-color: var(--view-theme);
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+.footer .transparent.data-v-fe1f759a {
+  opacity: 0;
+}
+.orderGoods.data-v-fe1f759a {
+  background-color: #fff;
+  margin-top: 12rpx;
+}
+.orderGoods .total.data-v-fe1f759a {
+  width: 100%;
+  height: 86rpx;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  font-size: 30rpx;
+  color: #282828;
+  line-height: 86rpx;
+  box-sizing: border-box;
+}
+.pictrue image.data-v-fe1f759a {
+  width: 130rpx;
+  height: 130rpx;
+}
+

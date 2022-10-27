@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.fontcolor.data-v-0d23a466 {
+  color: #e93323;
+}
+.orderGoods.data-v-0d23a466 {
+  background-color: #fff;
+  margin-top: 12rpx;
+}
+.orderGoods .total.data-v-0d23a466 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+  font-size: 30rpx;
+  color: #282828;
+  line-height: 86rpx;
+  box-sizing: border-box;
+}
+.botton-btn.data-v-0d23a466 {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  padding: 20rpx 20rpx;
+}
+.rig-btn.data-v-0d23a466 {
+  display: flex;
+  align-items: center;
+}
+.rig-btn .refund.data-v-0d23a466 {
+  font-size: 26rpx;
+  color: #e93323;
+}
+.rig-btn .done.data-v-0d23a466 {
+  font-size: 26rpx;
+  color: #F19D2F;
+}
+.logistics.data-v-0d23a466 {
+  line-height: 30rpx;
+  color: #999999;
+  font-size: 20rpx;
+  border: 1px solid;
+  border-radius: 30rpx;
+  padding: 6rpx 12rpx;
+  margin-left: 10rpx;
+}
+.sure.data-v-0d23a466 {
+  color: #e93323;
+  border: 1px solid #e93323;
+}
+.more-operation.data-v-0d23a466 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx 0;
+  color: #bbb;
+}
+.b-top.data-v-0d23a466 {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-top: 1px solid #f0f0f0;
+}
+.fade-enter-active.data-v-0d23a466,
+.fade-leave-active.data-v-0d23a466 {
+  transition: all 0.1s;
+}
+.fade-enter.data-v-0d23a466,
+.fade-leave-to.data-v-0d23a466 {
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.op.data-v-0d23a466 {
+  opacity: 0.5;
+}
+.pic.data-v-0d23a466 {
+  display: flex;
+  justify-content: space-between;
+}
+.valid.data-v-0d23a466 {
+  font-size: 24rpx;
+}
+

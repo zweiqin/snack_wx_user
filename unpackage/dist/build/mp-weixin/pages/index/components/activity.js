@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/components/activity"],{1124:function(t,n,e){"use strict";e.r(n);var i=e("675f"),a=e("d95c");for(var c in a)"default"!==c&&function(t){e.d(n,t,(function(){return a[t]}))}(c);e("3552");var o,r=e("f0c5"),f=Object(r["a"])(a["default"],i["b"],i["c"],!1,null,null,null,!1,i["a"],o);n["default"]=f.exports},3552:function(t,n,e){"use strict";var i=e("f0de"),a=e.n(i);a.a},"675f":function(t,n,e){"use strict";var i;e.d(n,"b",(function(){return a})),e.d(n,"c",(function(){return c})),e.d(n,"a",(function(){return i}));var a=function(){var t=this,n=t.$createElement;t._self._c},c=[]},d95c:function(t,n,e){"use strict";e.r(n);var i=e("f420"),a=e.n(i);for(var c in i)"default"!==c&&function(t){e.d(n,t,(function(){return i[t]}))}(c);n["default"]=a.a},f0de:function(t,n,e){},f420:function(t,n,e){"use strict";(function(t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var i=e("2c77"),a=getApp(),c={name:"activity",props:{dataConfig:{type:Object,default:function(){}}},watch:{dataConfig:{immediate:!0,handler:function(t,n){if(t){var e=JSON.parse(JSON.stringify(t.imgList.list));this.activityOne=t.imgList.list[0],e.splice(0,1),this.activity=e,this.isShow=t.isShow.val}}}},data:function(){return{activity:[],activityOne:{},name:this.$options.name,isShow:!0,isIframe:a.globalData.isIframe}},created:function(){},methods:{gopage:function(n){(0,i.goPage)().then((function(e){-1!=n.indexOf("http")||(["/pages/goods_cate/goods_cate","/pages/order_addcart/order_addcart","/pages/user/index"].indexOf(n),t.navigateTo({url:n}))}))}}};n.default=c}).call(this,e("543d")["default"])}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pages/index/components/activity-create-component',
+    {
+        'pages/index/components/activity-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("1124"))
+        })
+    },
+    [['pages/index/components/activity-create-component']]
+]);

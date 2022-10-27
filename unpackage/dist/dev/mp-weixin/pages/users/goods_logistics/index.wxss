@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* crmeb颜色变量 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.logistics .header.data-v-0ebde93d {
+  padding: 23rpx 30rpx;
+  background-color: #fff;
+  height: 166rpx;
+  box-sizing: border-box;
+}
+.logistics .header .pictrue.data-v-0ebde93d {
+  width: 120rpx;
+  height: 120rpx;
+}
+.logistics .header .pictrue image.data-v-0ebde93d {
+  width: 100%;
+  height: 100%;
+  border-radius: 6rpx;
+}
+.logistics .header .text.data-v-0ebde93d {
+  width: 540rpx;
+  font-size: 28rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+.logistics .header .text .name.data-v-0ebde93d {
+  width: 365rpx;
+  color: #282828;
+}
+.logistics .header .text .money.data-v-0ebde93d {
+  text-align: right;
+}
+.logistics .logisticsCon.data-v-0ebde93d {
+  background-color: #fff;
+  margin: 12rpx 0;
+}
+.logistics .logisticsCon .company.data-v-0ebde93d {
+  height: 120rpx;
+  margin: 0 0 45rpx 30rpx;
+  padding-right: 30rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+}
+.logistics .logisticsCon .company .picTxt.data-v-0ebde93d {
+  width: 520rpx;
+}
+.logistics .logisticsCon .company .picTxt .iconfont.data-v-0ebde93d {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #666;
+  text-align: center;
+  line-height: 50rpx;
+  color: #fff;
+  font-size: 35rpx;
+}
+.logistics .logisticsCon .company .picTxt .text.data-v-0ebde93d {
+  width: 450rpx;
+  font-size: 26rpx;
+  color: #282828;
+}
+.logistics .logisticsCon .company .picTxt .text .name.data-v-0ebde93d {
+  color: #999;
+}
+.logistics .logisticsCon .company .picTxt .text .express.data-v-0ebde93d {
+  margin-top: 5rpx;
+}
+.logistics .logisticsCon .company .copy.data-v-0ebde93d {
+  font-size: 20rpx;
+  width: 106rpx;
+  text-align: center;
+  border-radius: 3rpx;
+  border: 1px solid #999;
+  padding: 3rpx 0;
+}
+.logistics .logisticsCon .item.data-v-0ebde93d {
+  padding: 0 40rpx;
+  position: relative;
+}
+.logistics .logisticsCon .item .circular.data-v-0ebde93d {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: -1rpx;
+  left: 31.5rpx;
+  background-color: #ddd;
+}
+.logistics .logisticsCon .item .circular.on.data-v-0ebde93d {
+  background-color: var(--view-theme);
+}
+.logistics .logisticsCon .item .text.on-font.data-v-0ebde93d {
+  color: var(--view-theme);
+}
+.logistics .logisticsCon .item .text .data.on-font.data-v-0ebde93d {
+  color: var(--view-theme);
+}
+.logistics .logisticsCon .item .text.data-v-0ebde93d {
+  font-size: 26rpx;
+  color: #666;
+  width: 615rpx;
+  border-left: 1rpx solid #e6e6e6;
+  padding: 0 0 60rpx 38rpx;
+}
+.logistics .logisticsCon .item .text.on.data-v-0ebde93d {
+  border-left-color: var(--view-minorColor);
+}
+.logistics .logisticsCon .item .text .data.data-v-0ebde93d {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+}
+.logistics .logisticsCon .item .text .data .time.data-v-0ebde93d {
+  margin-left: 15rpx;
+}
+
