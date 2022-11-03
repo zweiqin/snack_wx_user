@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/users/order_confirm/index"],{
 
 /***/ 435:
-/*!*****************************************************************************************************!*\
-  !*** D:/zwq/company-project/零食小程序/uni-app/main.js?{"page":"pages%2Fusers%2Forder_confirm%2Findex"} ***!
-  \*****************************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/main.js?{"page":"pages%2Fusers%2Forder_confirm%2Findex"} ***!
+  \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19,9 +19,9 @@ wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;createPage(_index.def
 /***/ }),
 
 /***/ 436:
-/*!********************************************************************************!*\
-  !*** D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue ***!
-  \********************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -60,9 +60,9 @@ component.options.__file = "pages/users/order_confirm/index.vue"
 /***/ }),
 
 /***/ 437:
-/*!***************************************************************************************************************************!*\
-  !*** D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=template&id=064d693c&scoped=true& ***!
-  \***************************************************************************************************************************/
+/*!*****************************************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=template&id=064d693c&scoped=true& ***!
+  \*****************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -82,9 +82,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 438:
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=template&id=064d693c&scoped=true& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=template&id=064d693c&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -186,9 +186,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 439:
-/*!*********************************************************************************************************!*\
-  !*** D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************/
+/*!***********************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -202,14 +202,16 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 440:
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
 
 
 
@@ -543,6 +545,16 @@ var _default =
         real_name: '',
         phone: '' },
 
+      // 商店列表
+      shop_list: [
+      { lat: 22.597248, lng: 113.080287 },
+      { lat: 22.618858, lng: 113.097822 },
+      { lat: 22.595348, lng: 113.076685 },
+      { lat: 22.591112, lng: 113.086675 },
+      { lat: 22.57546, lng: 113.071951 },
+      { lat: 22.587649, lng: 113.069679 }],
+
+      is_suitable: false,
 
       textareaStatus: true,
       // 支付方式
@@ -646,6 +658,7 @@ var _default =
 
   },
   computed: (0, _vuex.mapGetters)(['isLogin']),
+
   onLoad: function onLoad(options) {
 
 
@@ -705,23 +718,7 @@ var _default =
      	 * 生命周期函数--监听页面显示
      	 */
 
-  onShow: function onShow() {
-    // 	//	计算两点之间直线距离
-    // 	const algorithm = (point1, point2) => {
-    // 		const [x1, y1] = point1
-    // 		const [x2, y2] = point2
-    // 		const Lat1 = x1 * Math.PI / 180.00 // 纬度
-    // 		const Lat2 = x2 * Math.PI / 180.00
-    // 		const a = Lat1 - Lat2//	两点纬度之差
-    // 		const b = y1 * Math.PI / 180.00 - y2 * Math.PI / 180.00 //	经度之差
-    // 		let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) +
-    // Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)))
-    // 		//	计算两点距离的公式
-    // 		s = s * 6378137.0//	弧长等于弧度乘地球半径（半径为米）
-    // 		s = Math.round(s * 10000) / 10000//	精确距离的数值
-    // 		return s
-    // 	}
-    // 	console.log(algorithm([22.595248, 113.078776], [22.596812, 113.080416]))
+  onShow: function onShow() {var _this2 = this;
     // 从地图选点插件返回后，在页面的onShow生命周期函数中能够调用插件接口，取得选点结果对象
     var location = chooseLocation.getLocation(); // 如果点击确认选点按钮，则返回选点结果对象，否则返回null
     console.log(location);
@@ -736,13 +733,16 @@ var _default =
         var Lat2 = x2 * Math.PI / 180.00;
         var a = Lat1 - Lat2; //	两点纬度之差
         var b = y1 * Math.PI / 180.00 - y2 * Math.PI / 180.00; //	经度之差
-        var s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) +
-        Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)));
-        //	计算两点距离的公式
+        var s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)));
+        // 计算两点距离的公式
         s = s * 6378137.0; //	弧长等于弧度乘地球半径（半径为米）
+        console.log(s);
         s = Math.round(s * 10000) / 10000; //	精确距离的数值
+        console.log(s);
         return s;
       };
+      // this.is_suitable = this.shop_list.some((item) => algorithm([22.59514, 113.07845], [item.lat, item.lng]) < 500)
+      this.is_suitable = this.shop_list.some(function (item) {return algorithm([_this2.addressMap.lat, _this2.addressMap.lng], [item.lat, item.lng]) < 500;});
     }
 
     var _this = this;
@@ -799,23 +799,23 @@ var _default =
       this.invShow = false;
       this.getInvoiceList();
     },
-    getInvoiceList: function getInvoiceList() {var _this2 = this;
+    getInvoiceList: function getInvoiceList() {var _this3 = this;
       uni.showLoading({
         title: '正在加载…' });
 
       (0, _user.invoiceList)().then(function (res) {
         uni.hideLoading();
-        _this2.invList = res.data.map(function (item) {
+        _this3.invList = res.data.map(function (item) {
           item.id = item.id.toString();
           return item;
         });
-        var result = _this2.invList.find(function (item) {return item.id == _this2.invChecked;});
+        var result = _this3.invList.find(function (item) {return item.id == _this3.invChecked;});
         if (result) {
           var name = '';
           name += result.header_type === 1 ? '个人' : '企业';
           name += result.type === 1 ? '普通' : '专用';
           name += '发票';
-          _this2.invTitle = name;
+          _this3.invTitle = name;
         }
       }).
       catch(function (err) {
@@ -865,6 +865,30 @@ var _default =
       this.pay_close = false;
     },
     goPay: function goPay() {
+      var that = this;
+
+      if (that.shippingType == 0) {
+        if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
+          return that.$util.Tips({
+            title: '请选择收货地址' });
+
+        }
+        if (!that.addressMap.real_name || !that.addressMap.phone) {
+          return that.$util.Tips({
+            title: '请输入收货人姓名和收货人手机号' });
+
+        }
+        if (!this.is_suitable && !that.shippingType) {
+          return that.$util.Tips({
+            title: '不满足500米配送范围之内' });
+
+        }
+        if (!that.dateTime) {
+          return that.$util.Tips({
+            title: '请选择配送时间' });
+
+        }
+      }
       this.pay_close = true;
     },
     payCheck: function payCheck(type) {
@@ -876,7 +900,7 @@ var _default =
        	 * 获取门店列表数据
        	 */
 
-    getList: function getList() {var _this3 = this;
+    getList: function getList() {var _this4 = this;
       var longitude = uni.getStorageSync('user_longitude'); // 经度
       var latitude = uni.getStorageSync('user_latitude'); // 纬度
       var data = {
@@ -887,8 +911,8 @@ var _default =
 
       (0, _store.storeListApi)(data).then(function (res) {
         var list = res.data.list.list || [];
-        _this3.$set(_this3, 'storeList', list);
-        _this3.$set(_this3, 'system_store', list[0]);
+        _this4.$set(_this4, 'storeList', list);
+        _this4.$set(_this4, 'system_store', list[0]);
       }).
       catch(function (err) {});
     },
@@ -913,7 +937,7 @@ var _default =
       this.payType = type;
       this.computedPrice();
     },
-    computedPrice: function computedPrice() {var _this4 = this;
+    computedPrice: function computedPrice() {var _this5 = this;
       var shippingType = this.shippingType;
       (0, _order.postOrderComputed)(this.orderKey, {
         addressId: this.addressId,
@@ -924,18 +948,19 @@ var _default =
       then(function (res) {
         var result = res.data.result;
         if (result) {
-          _this4.totalPrice = result.pay_price;
-          _this4.integral_price = result.deduction_price;
-          _this4.coupon_price = result.coupon_price;
-          _this4.integral = _this4.useIntegral ? result.SurplusIntegral : _this4.userInfo.integral;
-          _this4.$set(_this4.priceGroup, 'storePostage', shippingType == 1 ? 0 : result.pay_postage);
-          _this4.$set(_this4.priceGroup, 'storePostageDiscount', result.storePostageDiscount);
+          _this5.totalPrice = result.pay_price;
+          _this5.integral_price = result.deduction_price;
+          _this5.coupon_price = result.coupon_price;
+          _this5.integral = _this5.useIntegral ? result.SurplusIntegral : _this5.userInfo.integral;
+          _this5.$set(_this5.priceGroup, 'storePostage', shippingType == 1 ? 0 : result.pay_postage);
+          _this5.$set(_this5.priceGroup, 'storePostageDiscount', result.storePostageDiscount);
         }
       });
     },
     addressType: function addressType(e) {
       var index = e;
       this.shippingType = parseInt(index);
+      console.log(this.shippingType);
       this.computedPrice();
       if (index == 1) this.getList();
     },
@@ -1024,7 +1049,7 @@ var _default =
        	 *
        	 */
 
-    getConfirm: function getConfirm() {var _this5 = this;
+    getConfirm: function getConfirm() {var _this6 = this;
       var that = this;
       // return;
       uni.showLoading({
@@ -1077,14 +1102,14 @@ var _default =
         that.$set(that, 'ChangePrice', that.totalPrice);
         that.getBargainId();
         that.getCouponList();
-        if (_this5.addressId) {
-          _this5.computedPrice();
+        if (_this6.addressId) {
+          _this6.computedPrice();
         }
         uni.hideLoading();
       }).
       catch(function (err) {
         uni.hideLoading();
-        return _this5.$util.Tips({
+        return _this6.$util.Tips({
           title: err });
 
       });
@@ -1167,10 +1192,10 @@ var _default =
         that.car();
       }, 500);
     },
-    couponTap: function couponTap() {var _this6 = this;
+    couponTap: function couponTap() {var _this7 = this;
       this.coupon.coupon = true;
       this.coupon.list.forEach(function (item, index) {
-        if (item.id == _this6.couponId) {
+        if (item.id == _this7.couponId) {
           item.is_use = 1;
         } else {
           item.is_use = 0;
@@ -1212,14 +1237,14 @@ var _default =
       // 	'&couponId=' +
       // 	this.couponId;
     },
-    payment: function payment(data) {var _this7 = this;
+    payment: function payment(data) {var _this8 = this;
       var that = this;
       (0, _order.orderCreate)(that.orderKey, data).then(function (res) {
         var status = res.data.status;
         var orderId = res.data.result.orderId;
         var jsConfig = res.data.result.jsConfig;
         var goPages = '/pages/order_pay_status/index?order_id=' + orderId + '&msg=' + res.msg +
-        '&type=3' + '&totalPrice=' + _this7.totalPrice;
+        '&type=3' + '&totalPrice=' + _this8.totalPrice;
         switch (status) {
           case 'ORDER_EXIST':
           case 'EXTEND_ORDER':
@@ -1472,22 +1497,31 @@ var _default =
           title: '请选择支付方式' });
 
       }
-      // if (!that.addressId && !that.shippingType && !that.virtual_type) {
-      if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
-        return that.$util.Tips({
-          title: '请选择收货地址' });
 
-      }
-      if (!that.addressMap.real_name || !that.addressMap.phone) {
-        return that.$util.Tips({
-          title: '请输入收货人姓名和收货人手机号' });
+      if (that.shippingType == 0) {
+        // if (!that.addressId && !that.shippingType && !that.virtual_type) {
+        if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
+          return that.$util.Tips({
+            title: '请选择收货地址' });
 
-      }
-      if (!that.dateTime) {
-        return that.$util.Tips({
-          title: '请选择配送时间' });
+        }
+        if (!that.addressMap.real_name || !that.addressMap.phone) {
+          return that.$util.Tips({
+            title: '请输入收货人姓名和收货人手机号' });
 
+        }
+        if (!this.is_suitable && !that.shippingType) {
+          return that.$util.Tips({
+            title: '不满足500米配送范围之内' });
+
+        }
+        if (!that.dateTime) {
+          return that.$util.Tips({
+            title: '请选择配送时间' });
+
+        }
       }
+
       if (that.shippingType == 1) {
         if (that.contacts == '' || that.contactsTel == '') {
           return that.$util.Tips({
@@ -1515,6 +1549,10 @@ var _default =
         'phone': that.contactsTel,
         'addressId': 4,
         // 'addressId': that.addressId,
+        'addressMap': that.addressMap,
+        'deliveryTime': that.dateTime,
+        // 'address_real_name': that.addressMap.real_name,
+        // 'address_phone': that.addressMap.phone,
         'formId': '',
         'couponId': that.couponId,
         'payType': that.payType,
@@ -1562,9 +1600,9 @@ var _default =
 /***/ }),
 
 /***/ 441:
-/*!******************************************************************************************************************************************!*\
-  !*** D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=style&index=0&id=064d693c&lang=scss&scoped=true& ***!
-  \******************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=style&index=0&id=064d693c&lang=scss&scoped=true& ***!
+  \********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1578,9 +1616,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 442:
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/零食小程序/uni-app/pages/users/order_confirm/index.vue?vue&type=style&index=0&id=064d693c&lang=scss&scoped=true& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/users/order_confirm/index.vue?vue&type=style&index=0&id=064d693c&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

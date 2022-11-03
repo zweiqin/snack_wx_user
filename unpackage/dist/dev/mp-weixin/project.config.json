@@ -18,8 +18,8 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.27.0",
-  "appid": "wxc09d70be16f37b29",
+  "libVersion": "2.27.1",
+  "appid": "touristappid",
   "projectname": "AGA示例2",
   "condition": {},
   "editorSetting": {

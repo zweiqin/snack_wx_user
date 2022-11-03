@@ -65,26 +65,28 @@
 					<image src="/static/images/line.jpg"></image>
 				</view>
 
-				<view style="padding: 20rpx 20rpx 0 20rpx;">
-					<uni-forms ref="baseForm" :model-value="addressMap">
-						<uni-forms-item label="姓名" required>
-							<uni-easyinput v-model="addressMap.real_name" trim="all" placeholder="请输入收货人姓名" />
-						</uni-forms-item>
-						<uni-forms-item label="手机号" required>
-							<uni-easyinput v-model="addressMap.phone" type="number" trim="all" placeholder="请输入收货人手机号" />
-						</uni-forms-item>
-					</uni-forms>
-				</view>
+				<view v-if="shippingType == 0">
+					<view style="padding: 20rpx 20rpx 0 20rpx;">
+						<uni-forms ref="baseForm" :model-value="addressMap">
+							<uni-forms-item label="姓名" required>
+								<uni-easyinput v-model="addressMap.real_name" trim="all" placeholder="请输入收货人姓名" />
+							</uni-forms-item>
+							<uni-forms-item label="手机号" required>
+								<uni-easyinput v-model="addressMap.phone" type="number" trim="all" placeholder="请输入收货人手机号" />
+							</uni-forms-item>
+						</uni-forms>
+					</view>
 
-				<view class="">
-					<uni-card :is-shadow="false">
-						<view @tap="handlePicker">请选择配送时间：{{ dateTime }}</view>
-						<w-time-picker
-							ref="picker" :time-arr="['08:00','10:00','17:00','21:00']" :after-days="7" :start-hour="8"
-							:end-hour="21" :step="60" :after-hours="0" @confirm="onConfirm"
-							@cancel="onCancel"
-						></w-time-picker>
-					</uni-card>
+					<view class="">
+						<uni-card :is-shadow="false">
+							<view @tap="handlePicker">请选择配送时间：{{ dateTime }}</view>
+							<w-time-picker
+								ref="picker" :time-arr="['08:00','10:00','17:00','21:00']" :after-days="7" :start-hour="8"
+								:end-hour="21" :step="60" :after-hours="0" @confirm="onConfirm"
+								@cancel="onCancel"
+							></w-time-picker>
+						</uni-card>
+					</view>
 				</view>
 
 			</view>
@@ -332,6 +334,16 @@ export default {
 				real_name: '',
 				phone: ''
 			},
+			// 商店列表
+			shop_list: [
+				{ lat: 22.597248, lng: 113.080287 },
+				{ lat: 22.618858, lng: 113.097822 },
+				{ lat: 22.595348, lng: 113.076685 },
+				{ lat: 22.591112, lng: 113.086675 },
+				{ lat: 22.57546, lng: 113.071951 },
+				{ lat: 22.587649, lng: 113.069679 }
+			],
+			is_suitable: false,
 
 			textareaStatus: true,
 			// 支付方式
@@ -435,6 +447,7 @@ export default {
 		}
 	},
 	computed: mapGetters([ 'isLogin' ]),
+
 	onLoad(options) {
 		// #ifdef H5
 		this.from = this.$wechat.isWeixin() ? 'weixin' : 'weixinh5'
@@ -495,22 +508,6 @@ export default {
 		 */
 
 	onShow() {
-	// 	//	计算两点之间直线距离
-	// 	const algorithm = (point1, point2) => {
-	// 		const [x1, y1] = point1
-	// 		const [x2, y2] = point2
-	// 		const Lat1 = x1 * Math.PI / 180.00 // 纬度
-	// 		const Lat2 = x2 * Math.PI / 180.00
-	// 		const a = Lat1 - Lat2//	两点纬度之差
-	// 		const b = y1 * Math.PI / 180.00 - y2 * Math.PI / 180.00 //	经度之差
-	// 		let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) +
-	// Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)))
-	// 		//	计算两点距离的公式
-	// 		s = s * 6378137.0//	弧长等于弧度乘地球半径（半径为米）
-	// 		s = Math.round(s * 10000) / 10000//	精确距离的数值
-	// 		return s
-	// 	}
-	// 	console.log(algorithm([22.595248, 113.078776], [22.596812, 113.080416]))
 		// 从地图选点插件返回后，在页面的onShow生命周期函数中能够调用插件接口，取得选点结果对象
 		const location = chooseLocation.getLocation() // 如果点击确认选点按钮，则返回选点结果对象，否则返回null
 		console.log(location)
@@ -523,15 +520,18 @@ export default {
 				const [x2, y2] = point2
 				const Lat1 = x1 * Math.PI / 180.00 // 纬度
 				const Lat2 = x2 * Math.PI / 180.00
-				const a = Lat1 - Lat2//	两点纬度之差
+				const a = Lat1 - Lat2 //	两点纬度之差
 				const b = y1 * Math.PI / 180.00 - y2 * Math.PI / 180.00 //	经度之差
-				let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) +
-	Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)))
-				//	计算两点距离的公式
-				s = s * 6378137.0//	弧长等于弧度乘地球半径（半径为米）
-				s = Math.round(s * 10000) / 10000//	精确距离的数值
+				let s = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(a / 2), 2) + Math.cos(Lat1) * Math.cos(Lat2) * Math.pow(Math.sin(b / 2), 2)))
+				// 计算两点距离的公式
+				s = s * 6378137.0 //	弧长等于弧度乘地球半径（半径为米）
+				console.log(s)
+				s = Math.round(s * 10000) / 10000 //	精确距离的数值
+				console.log(s)
 				return s
 			}
+			// this.is_suitable = this.shop_list.some((item) => algorithm([22.59514, 113.07845], [item.lat, item.lng]) < 500)
+			this.is_suitable = this.shop_list.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.lat, item.lng]) < 500)
 		}
 
 		const _this = this
@@ -654,6 +654,30 @@ export default {
 			this.pay_close = false
 		},
 		goPay() {
+			const that = this
+
+			if (that.shippingType == 0) {
+				if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
+					return that.$util.Tips({
+						title: '请选择收货地址'
+					})
+				}
+				if (!that.addressMap.real_name || !that.addressMap.phone) {
+					return that.$util.Tips({
+						title: '请输入收货人姓名和收货人手机号'
+					})
+				}
+				if (!this.is_suitable && !that.shippingType) {
+					return that.$util.Tips({
+						title: '不满足500米配送范围之内'
+					})
+				}
+				if (!that.dateTime) {
+					return that.$util.Tips({
+						title: '请选择配送时间'
+					})
+				}
+			}
 			this.pay_close = true
 		},
 		payCheck(type) {
@@ -725,6 +749,7 @@ export default {
 		addressType(e) {
 			const index = e
 			this.shippingType = parseInt(index)
+			console.log(this.shippingType)
 			this.computedPrice()
 			if (index == 1) this.getList()
 		},
@@ -1261,22 +1286,31 @@ export default {
 					title: '请选择支付方式'
 				})
 			}
-			// if (!that.addressId && !that.shippingType && !that.virtual_type) {
-			if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
-				return that.$util.Tips({
-					title: '请选择收货地址'
-				})
+
+			if (that.shippingType == 0) {
+				// if (!that.addressId && !that.shippingType && !that.virtual_type) {
+				if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
+					return that.$util.Tips({
+						title: '请选择收货地址'
+					})
+				}
+				if (!that.addressMap.real_name || !that.addressMap.phone) {
+					return that.$util.Tips({
+						title: '请输入收货人姓名和收货人手机号'
+					})
+				}
+				if (!this.is_suitable && !that.shippingType) {
+					return that.$util.Tips({
+						title: '不满足500米配送范围之内'
+					})
+				}
+				if (!that.dateTime) {
+					return that.$util.Tips({
+						title: '请选择配送时间'
+					})
+				}
 			}
-			if (!that.addressMap.real_name || !that.addressMap.phone) {
-				return that.$util.Tips({
-					title: '请输入收货人姓名和收货人手机号'
-				})
-			}
-			if (!that.dateTime) {
-				return that.$util.Tips({
-					title: '请选择配送时间'
-				})
-			}
+
 			if (that.shippingType == 1) {
 				if (that.contacts == '' || that.contactsTel == '') {
 					return that.$util.Tips({
@@ -1304,6 +1338,10 @@ export default {
 				'phone': that.contactsTel,
 				'addressId': 4,
 				// 'addressId': that.addressId,
+				'addressMap': that.addressMap,
+				'deliveryTime': that.dateTime,
+				// 'address_real_name': that.addressMap.real_name,
+				// 'address_phone': that.addressMap.phone,
 				'formId': '',
 				'couponId': that.couponId,
 				'payType': that.payType,
