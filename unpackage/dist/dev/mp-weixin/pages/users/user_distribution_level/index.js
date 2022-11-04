@@ -385,7 +385,7 @@ var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color.js */
 //
 //
 //
-var recommend = function recommend() {Promise.all(/*! require.ensure | components/recommend/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/recommend/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/recommend */ 1089));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { recommend: recommend }, mixins: [_color.default], data: function data() {return { reach_count: 0, distributionLevel: [], swiperIndex: 0, growthValue: true, task: [], //任务列表
+var recommend = function recommend() {Promise.all(/*! require.ensure | components/recommend/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/recommend/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/recommend */ 1091));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { recommend: recommend }, mixins: [_color.default], data: function data() {return { reach_count: 0, distributionLevel: [], swiperIndex: 0, growthValue: true, task: [], //任务列表
       illustrate: '', //任务说明
       level_id: 0, //任务id,
       hostProduct: [], grade: 0, hotScroll: false, hotPage: 1, hotLimit: 10, level_title: '', level_discount: '', levelInfo: {}, userInfo: {}, taskInfo: {}, taskNum: 0 };}, computed: (0, _vuex.mapGetters)(['isLogin']), watch: { distributionLevel: function distributionLevel() {var that = this;if (that.distributionLevel.length > 0) {that.distributionLevel.forEach(function (item, index) {if (item.is_clear === false) {// that.swiper.slideTo(index);

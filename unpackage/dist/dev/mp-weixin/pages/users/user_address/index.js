@@ -265,7 +265,7 @@ var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color.js */
 //
 //
 //
-var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1103));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1140));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { authorize: authorize, home: home }, mixins: [_color.default], data: function data() {return { regionDval: ['浙江省', '杭州市', '滨江区'], cartId: '', //购物车id
+var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { authorize: authorize, home: home }, mixins: [_color.default], data: function data() {return { regionDval: ['浙江省', '杭州市', '滨江区'], cartId: '', //购物车id
       pinkId: 0, //拼团id
       couponId: 0, //优惠券id
       id: 0, //地址id

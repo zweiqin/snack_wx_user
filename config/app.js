@@ -6,6 +6,8 @@ module.exports = {
 	HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
 	// #endif
 
+	HTTP_REQUEST_URL_GO: `http://192.168.0.88:10123`,
+
 	// H5配置
 	// #ifdef H5
 	// H5接口是浏览器地址，非单独部署不用修改

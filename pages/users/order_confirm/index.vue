@@ -80,10 +80,11 @@
 					<view class="">
 						<uni-card :is-shadow="false">
 							<view @tap="handlePicker">请选择配送时间：{{ dateTime }}</view>
+							<!-- :time-arr="['08:00','10:00','17:00','21:00']" -->
 							<w-time-picker
-								ref="picker" :time-arr="['08:00','10:00','17:00','21:00']" :after-days="7" :start-hour="8"
-								:end-hour="21" :step="60" :after-hours="0" @confirm="onConfirm"
-								@cancel="onCancel"
+								v-if="is_show_delivery" ref="picker" :time-arr="delivery_time_arr" :after-days="7"
+								:start-hour="8" :end-hour="21" :step="60" :after-hours="0"
+								@confirm="onConfirm" @cancel="onCancel"
 							></w-time-picker>
 						</uni-card>
 					</view>
@@ -261,6 +262,9 @@
 </template>
 <script>
 import {
+	GetEbSystemStoreList, GetDeliveryTime
+} from '@/api/go_api.js'
+import {
 	orderConfirm,
 	getCouponsOrderPrice,
 	orderCreate,
@@ -329,20 +333,22 @@ export default {
 
 			// 配送时间
 			dateTime: '',
+			delivery_time_arr: [],
+			is_show_delivery: true,
 			// 地图选点的配送地址
 			addressMap: {
 				real_name: '',
 				phone: ''
 			},
-			// 商店列表
-			shop_list: [
-				{ lat: 22.597248, lng: 113.080287 },
-				{ lat: 22.618858, lng: 113.097822 },
-				{ lat: 22.595348, lng: 113.076685 },
-				{ lat: 22.591112, lng: 113.086675 },
-				{ lat: 22.57546, lng: 113.071951 },
-				{ lat: 22.587649, lng: 113.069679 }
-			],
+			// // 商店列表
+			// shop_list: [
+			// 	{ lat: 22.597248, lng: 113.080287 },
+			// 	{ lat: 22.618858, lng: 113.097822 },
+			// 	{ lat: 22.595348, lng: 113.076685 },
+			// 	{ lat: 22.591112, lng: 113.086675 },
+			// 	{ lat: 22.57546, lng: 113.071951 },
+			// 	{ lat: 22.587649, lng: 113.069679 }
+			// ],
 			is_suitable: false,
 
 			textareaStatus: true,
@@ -447,7 +453,21 @@ export default {
 		}
 	},
 	computed: mapGetters([ 'isLogin' ]),
-
+	onReady() {
+		GetDeliveryTime({})
+			.then((res) => {
+				console.log(res)
+				this.delivery_time_arr = res.data.List
+				this.is_show_delivery = false
+				this.$nextTick(() => {this.is_show_delivery = true})
+				// uni.hideLoading()
+			})
+			.catch((err) =>
+			// uni.hideLoading()
+					 this.$util.Tips({
+					title: err
+				}))
+	},
 	onLoad(options) {
 		// #ifdef H5
 		this.from = this.$wechat.isWeixin() ? 'weixin' : 'weixinh5'
@@ -530,8 +550,19 @@ export default {
 				console.log(s)
 				return s
 			}
+			GetEbSystemStoreList({ is_show: 1, is_del: 0 })
+				.then((res) => {
+					console.log(res)
+					this.is_suitable = res.data.items.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.latitude, item.longitude]) < 500)
+				// uni.hideLoading()
+				})
+				.catch((err) =>
+					// uni.hideLoading()
+					 this.$util.Tips({
+						title: err
+					}))
 			// this.is_suitable = this.shop_list.some((item) => algorithm([22.59514, 113.07845], [item.lat, item.lng]) < 500)
-			this.is_suitable = this.shop_list.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.lat, item.lng]) < 500)
+			// this.is_suitable = this.shop_list.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.lat, item.lng]) < 500)
 		}
 
 		const _this = this

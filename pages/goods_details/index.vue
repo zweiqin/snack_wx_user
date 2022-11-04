@@ -207,7 +207,8 @@
 
 						<view>
 							<uni-card title="商品过期时间">
-								<text class="uni-body">2022年10月30日</text>
+								<!-- <text class="uni-body">2022年10月30日</text> -->
+								<text class="uni-body">{{ storeInfo.expiration_time||'无' }}</text>
 								<!-- expiration_time:'2022-09-23' -->
 							</uni-card>
 						</view>

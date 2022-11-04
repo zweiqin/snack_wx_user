@@ -210,7 +210,7 @@ var _user = __webpack_require__(/*! @/api/user.js */ 14);
 var _order = __webpack_require__(/*! @/api/order.js */ 29);
 
 
-var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color.js */ 31));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1140));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color.js */ 31));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
   components: {
     home: home },

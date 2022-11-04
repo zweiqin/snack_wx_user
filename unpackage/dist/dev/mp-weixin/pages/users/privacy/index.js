@@ -98,7 +98,7 @@ var components
 try {
   components = {
     jyfParser: function() {
-      return Promise.all(/*! import() | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then(__webpack_require__.bind(null, /*! @/components/jyf-parser/jyf-parser.vue */ 1147))
+      return Promise.all(/*! import() | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then(__webpack_require__.bind(null, /*! @/components/jyf-parser/jyf-parser.vue */ 1149))
     }
   }
 } catch (e) {
@@ -163,7 +163,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _user = __webpack_require__(/*! @/api/user.js */ 14);var parser = function parser() {Promise.all(/*! require.ensure | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then((function () {return resolve(__webpack_require__(/*! @/components/jyf-parser/jyf-parser */ 1147));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+var _user = __webpack_require__(/*! @/api/user.js */ 14);var parser = function parser() {Promise.all(/*! require.ensure | components/jyf-parser/jyf-parser */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/jyf-parser/jyf-parser")]).then((function () {return resolve(__webpack_require__(/*! @/components/jyf-parser/jyf-parser */ 1149));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 {
