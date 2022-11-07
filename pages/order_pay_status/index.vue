@@ -40,7 +40,7 @@
 
 			<view class="" style="margin: 20px auto;width: 200px; height: 200px;">
 				<image
-					style="background-color: #eeeeee;width: 200px; height: 200px;" :mode="'aspectFit'" :src="'http://'+'picgo-vincent.oss-cn-guangzhou.aliyuncs.com/photo/1662349720166-./20220607155302726.jpg'"
+					style="background-color: #eeeeee;width: 200px; height: 200px;" :mode="'aspectFit'" :src="pay_img"
 				></image>
 			</view>
 
@@ -108,6 +108,9 @@
 </template>
 
 <script>
+import {
+	GetPayImage
+} from '@/api/go_api.js'
 import lotteryModel from './payLottery.vue'
 import {
 	getOrderDetail,
@@ -136,6 +139,7 @@ export default {
 	mixins: [ colors ],
 	data() {
 		return {
+			pay_img: '',
 			loading: false,
 			lotteryLoading: false,
 			orderLottery: false,
@@ -165,6 +169,17 @@ export default {
 		}
 	},
 	onLoad(options) {
+		GetPayImage({})
+			.then((res) => {
+				console.log(res)
+				this.pay_img = res.data.List
+				// uni.hideLoading()
+			})
+			.catch((err) =>
+				// uni.hideLoading()
+						 this.$util.Tips({
+					title: err
+				}))
 		this.options = options
 		if (!options.order_id) {
 			return this.$util.Tips({

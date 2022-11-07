@@ -144,7 +144,7 @@
 
 			<view class="" style="margin: 20px auto;width: 200px; height: 200px;">
 				<image
-					style="background-color: #eeeeee;width: 200px; height: 200px;" :mode="'aspectFit'" :src="'http://'+'picgo-vincent.oss-cn-guangzhou.aliyuncs.com/photo/1662349720166-./20220607155302726.jpg'"
+					style="background-color: #eeeeee;width: 200px; height: 200px;" :mode="'aspectFit'" :src="pay_img"
 				></image>
 			</view>
 
@@ -406,6 +406,9 @@ import {
 	refundExpress
 } from '@/api/order.js'
 import {
+	GetPayImage
+} from '@/api/go_api.js'
+import {
 	openOrderRefundSubscribe
 } from '@/utils/SubscribeMessage.js'
 import {
@@ -446,6 +449,7 @@ export default {
 	mixins: [ colors ],
 	data() {
 		return {
+			pay_img: '',
 			order_id: '',
 			evaluate: 0,
 			cartInfo: [], // 购物车产品
@@ -505,6 +509,18 @@ export default {
 	},
 	computed: mapGetters([ 'isLogin' ]),
 	onLoad(options) {
+		GetPayImage({})
+			.then((res) => {
+				console.log(res)
+				this.pay_img = res.data.List
+				// uni.hideLoading()
+			})
+			.catch((err) =>
+				// uni.hideLoading()
+						 this.$util.Tips({
+					title: err
+				}))
+
 		if (options.order_id) {
 			this.$set(this, 'order_id', options.order_id)
 		}

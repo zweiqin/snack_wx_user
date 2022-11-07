@@ -242,6 +242,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var _go_api = __webpack_require__(/*! @/api/go_api.js */ 441);
+
+
 var _payLottery = _interopRequireDefault(__webpack_require__(/*! ./payLottery.vue */ 143));
 var _order = __webpack_require__(/*! @/api/order.js */ 29);
 
@@ -368,16 +371,28 @@ var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color */ 31
 //
 //
 //
-var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { lotteryModel: _payLottery.default, authorize: authorize }, mixins: [_color.default], data: function data() {return { loading: false, lotteryLoading: false, orderLottery: false, orderId: '', order_pay_info: { paid: 1, _status: {} }, isAuto: false, // 没有授权的不会自动授权
+var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { lotteryModel: _payLottery.default, authorize: authorize }, mixins: [_color.default], data: function data() {return { pay_img: '', loading: false, lotteryLoading: false, orderLottery: false, orderId: '', order_pay_info: { paid: 1, _status: {} }, isAuto: false, // 没有授权的不会自动授权
       isShowAuth: false, // 是否隐藏授权
-      status: 0, msg: '', couponsHidden: true, couponList: [], options: {} };}, computed: (0, _vuex.mapGetters)(['isLogin']), watch: { isLogin: { handler: function handler(newV, oldV) {if (newV) {this.getOrderPayInfo();}}, deep: true } }, onLoad: function onLoad(options) {this.options = options;if (!options.order_id) {return this.$util.Tips({ title: '缺少参数无法查看订单支付状态' }, { tab: 3, url: 1 });}this.orderId = options.order_id;this.status = options.status || 0;this.msg = options.msg || ''; //
+      status: 0, msg: '', couponsHidden: true, couponList: [], options: {} };}, computed: (0, _vuex.mapGetters)(['isLogin']), watch: { isLogin: { handler: function handler(newV, oldV) {if (newV) {this.getOrderPayInfo();}}, deep: true } }, onLoad: function onLoad(options) {var _this = this;(0, _go_api.GetPayImage)({}).then(function (res) {console.log(res);_this.pay_img = res.data.List; // uni.hideLoading()
+    }).catch(function (err) {return (// uni.hideLoading()
+        _this.$util.Tips({ title: err }));});this.options = options;if (!options.order_id) {return this.$util.Tips({ title: '缺少参数无法查看订单支付状态' }, { tab: 3, url: 1 });}this.orderId = options.order_id;this.status = options.status || 0;this.msg = options.msg || ''; //
   }, onShow: function onShow() {if (this.isLogin) {this.getOrderPayInfo();} else {(0, _login.toLogin)();}}, methods: { getOrderLottery: function getOrderLottery(status) {this.orderLottery = status;this.lotteryLoading = true;}, openTap: function openTap() {this.$set(this, 'couponsHidden', !this.couponsHidden);}, onLoadFun: function onLoadFun() {this.getOrderPayInfo();}, /**
                                                                                                                                                                                                                                                                                                                                                                                     	 *
                                                                                                                                                                                                                                                                                                                                                                                     	 * 支付完成查询支付状态
                                                                                                                                                                                                                                                                                                                                                                                     	 *
-                                                                                                                                                                                                                                                                                                                                                                                    	 */getOrderPayInfo: function getOrderPayInfo() {var _this = this;var that = this;uni.showLoading({ title: '正在加载中' });(0, _order.getOrderDetail)(that.orderId).then(function (res) {uni.hideLoading();that.$set(that, 'order_pay_info', res.data);uni.setNavigationBarTitle({ title: res.data.paid ? '支付成功' : '未支付' });_this.loading = true;_this.getOrderCoupon();}).catch(function (err) {_this.loading = true;uni.hideLoading();});}, getOrderCoupon: function getOrderCoupon() {var that = this;(0, _order.orderCoupon)(that.orderId).then(function (res) {that.couponList = res.data;});}, /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    	 * 去首页关闭当前所有页面
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    	 */
+                                                                                                                                                                                                                                                                                                                                                                                    	 */getOrderPayInfo: function getOrderPayInfo() {var _this2 = this;var that = this;uni.showLoading({ title: '正在加载中' });(0, _order.getOrderDetail)(that.orderId).then(function (res) {uni.hideLoading();that.$set(that, 'order_pay_info', res.data);uni.setNavigationBarTitle({ title: res.data.paid ? '支付成功' : '未支付' });_this2.loading = true;_this2.getOrderCoupon();}).catch(function (err) {_this2.loading = true;uni.hideLoading();
+      });
+    },
+    getOrderCoupon: function getOrderCoupon() {
+      var that = this;
+      (0, _order.orderCoupon)(that.orderId).then(function (res) {
+        that.couponList = res.data;
+      });
+    },
+
+    /**
+       	 * 去首页关闭当前所有页面
+       	 */
 
     goIndex: function goIndex(e) {
       uni.switchTab({

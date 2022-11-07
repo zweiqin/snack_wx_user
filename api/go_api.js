@@ -10,6 +10,11 @@ export function GetDeliveryTime(data) {
 	return request.get('v1/EbSystemDeliveryTime/GetDeliveryTime', data)
 }
 
+// 获取列表
+export function GetPayImage(data) {
+	return request.get('v1/SystemPayImg/GetPayImage', data)
+}
+
 // /**
 //  * 公共接口 ，优惠券接口 , 行业此讯 , 手机号码注册
 //  *

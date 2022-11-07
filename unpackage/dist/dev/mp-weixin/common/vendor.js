@@ -21627,7 +21627,7 @@ internalMixin(Vue);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 442));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;exports.GetPayImage = GetPayImage;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 442));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // 获取列表
 function GetEbSystemStoreList(data) {
@@ -21637,6 +21637,11 @@ function GetEbSystemStoreList(data) {
 // 获取列表
 function GetDeliveryTime(data) {
   return _request_go.default.get('v1/EbSystemDeliveryTime/GetDeliveryTime', data);
+}
+
+// 获取列表
+function GetPayImage(data) {
+  return _request_go.default.get('v1/SystemPayImg/GetPayImage', data);
 }
 
 // /**
