@@ -553,7 +553,7 @@ export default {
 			GetEbSystemStoreList({ is_show: 1, is_del: 0 })
 				.then((res) => {
 					console.log(res)
-					this.is_suitable = res.data.items.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.latitude, item.longitude]) < 500)
+					this.is_suitable = res.data.items.some((item) => algorithm([this.addressMap.lat, this.addressMap.lng], [item.latitude, item.longitude]) < 2000)
 				// uni.hideLoading()
 				})
 				.catch((err) =>
@@ -700,7 +700,7 @@ export default {
 				}
 				if (!this.is_suitable && !that.shippingType) {
 					return that.$util.Tips({
-						title: '不满足500米配送范围之内'
+						title: '超过了配送范围！'
 					})
 				}
 				if (!that.dateTime) {
@@ -1332,7 +1332,7 @@ export default {
 				}
 				if (!this.is_suitable && !that.shippingType) {
 					return that.$util.Tips({
-						title: '不满足500米配送范围之内'
+						title: '超过了配送范围！'
 					})
 				}
 				if (!that.dateTime) {
