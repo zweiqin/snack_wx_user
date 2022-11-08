@@ -125,6 +125,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var g0 =
+    _vm.storeInfo.expiration_time &&
+    new Date(_vm.storeInfo.expiration_time).getTime() > new Date().getTime()
   var l0 =
     _vm.attr.productAttr.length && _vm.skuArr.length > 1
       ? _vm.skuArr.slice(0, 4)
@@ -142,6 +145,7 @@ var render = function() {
     {},
     {
       $root: {
+        g0: g0,
         l0: l0,
         m0: m0,
         m1: m1
@@ -772,7 +776,7 @@ var _public = __webpack_require__(/*! @/api/public */ 27);
 
 var _utils = __webpack_require__(/*! @/utils */ 38);
 
-var _clipboard = _interopRequireDefault(__webpack_require__(/*! @/plugin/clipboard/clipboard.js */ 203));
+var _clipboard = _interopRequireDefault(__webpack_require__(/*! @/plugin/clipboard/clipboard.js */ 205));
 
 
 

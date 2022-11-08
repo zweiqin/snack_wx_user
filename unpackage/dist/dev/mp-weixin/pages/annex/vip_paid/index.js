@@ -315,7 +315,7 @@ var _order = __webpack_require__(/*! @/api/order.js */ 29);
 var _login = __webpack_require__(/*! @/libs/login.js */ 9);
 
 
-var _SubscribeMessage = __webpack_require__(/*! @/utils/SubscribeMessage.js */ 148);
+var _SubscribeMessage = __webpack_require__(/*! @/utils/SubscribeMessage.js */ 150);
 
 
 var _dayjsMin = _interopRequireDefault(__webpack_require__(/*! @/plugin/dayjs/dayjs.min.js */ 66));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var payment = function payment() {Promise.all(/*! require.ensure | components/payment/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/payment/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/payment */ 1203));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =

@@ -264,7 +264,7 @@ var _order = __webpack_require__(/*! @/api/order.js */ 29);
 var _user = __webpack_require__(/*! @/api/user.js */ 14);
 
 
-var _SubscribeMessage = __webpack_require__(/*! @/utils/SubscribeMessage.js */ 148);
+var _SubscribeMessage = __webpack_require__(/*! @/utils/SubscribeMessage.js */ 150);
 
 
 

@@ -186,7 +186,7 @@ var _store = __webpack_require__(/*! @/api/store.js */ 46);
 var _activity = __webpack_require__(/*! @/api/activity.js */ 566);
 
 
-var _clipboard = _interopRequireDefault(__webpack_require__(/*! @/plugin/clipboard/clipboard.js */ 203));
+var _clipboard = _interopRequireDefault(__webpack_require__(/*! @/plugin/clipboard/clipboard.js */ 205));
 var _login = __webpack_require__(/*! @/libs/login.js */ 9);
 
 

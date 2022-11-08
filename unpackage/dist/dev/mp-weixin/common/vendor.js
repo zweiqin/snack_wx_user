@@ -762,7 +762,7 @@ function populateParameters(result) {var _result$brand =
 
   var parameters = {
     appId: "__UNI__6C47A13",
-    appName: "AGA示例2",
+    appName: "零食小程序",
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
@@ -871,7 +871,7 @@ var getAppBaseInfo = {
 
     result = sortObject(Object.assign(result, {
       appId: "__UNI__6C47A13",
-      appName: "AGA示例2",
+      appName: "零食小程序",
       appVersion: "1.0.0",
       appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage),
@@ -1464,7 +1464,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"AGA示例2","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8288,6 +8288,233 @@ calendar;exports.default = _default;
 
 /***/ }),
 
+/***/ 143:
+/*!************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/go_api.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;exports.GetPayImage = GetPayImage;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 144));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+// 获取列表
+function GetEbSystemStoreList(data) {
+  return _request_go.default.get('v1/EbSystemStore/GetEbSystemStoreList', data);
+}
+
+// 获取列表
+function GetDeliveryTime(data) {
+  return _request_go.default.get('v1/EbSystemDeliveryTime/GetDeliveryTime', data);
+}
+
+// 获取列表
+function GetPayImage(data) {
+  return _request_go.default.get('v1/SystemPayImg/GetPayImage', data);
+}
+
+// /**
+//  * 公共接口 ，优惠券接口 , 行业此讯 , 手机号码注册
+//  *
+//  */
+
+// /**
+//  * 获取主页数据 无需授权
+//  *
+//  */
+
+// export function getIndexData() {
+// 	return request.get('v2/index', {}, {
+// 		noAuth: true
+// 	})
+// }
+
+// /**
+//  * 获取服务器类型
+//  *
+//  */
+
+// export function getServerType() {
+// 	return request.get('v2/site_serve', {}, {
+// 		noAuth: true
+// 	})
+// }
+
+// /**
+//  * 获取登录授权login
+//  *
+//  */
+
+// export function getLogo() {
+// 	return request.get('wechat/get_logo', {}, {
+// 		noAuth: true
+// 	})
+// }
+
+// /**
+//  * 保存form_id
+//  * @param string formId
+//  */
+
+// export function setFormId(formId) {
+// 	return request.post('wechat/set_form_id', {
+// 		formId
+// 	})
+// }
+
+// /**
+//  * 领取优惠卷
+//  * @param int couponId
+//  *
+//  */
+
+// export function setCouponReceive(couponId) {
+// 	return request.post('coupon/receive', {
+// 		couponId
+// 	})
+// }
+
+// /**
+//  * 订单查询物流信息
+//  * @returns {*}
+//  */
+
+// export function express(uni, type) {
+// 	return request.get('order/express/' + uni + `${type ? '/refund' : ''}`)
+// }
+
+// /**
+//  * 获取退款理由
+//  *
+//  */
+
+// export function ordeRefundReason() {
+// 	return request.get('order/refund/reason')
+// }
+
+// /**
+//  * 订单退款审核
+//  * @param object data
+//  */
+
+// export function orderRefundVerify(data) {
+// 	return request.post('order/refund/verify', data)
+// }
+
+// /**
+//  * 订单确认获取订单详细信息
+//  * @param string cartId
+//  */
+
+// export function orderConfirm(cartId, news, addressId) {
+// 	return request.post('order/confirm', {
+// 		cartId,
+// 		'new': news,
+// 		addressId
+// 	})
+// }
+
+/***/ }),
+
+/***/ 144:
+/*!******************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request_go.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+var _app = __webpack_require__(/*! @/config/app */ 16);
+
+
+
+
+var _login = __webpack_require__(/*! ../libs/login */ 9);
+
+
+
+var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 10));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // +----------------------------------------------------------------------
+// | CRMEB [ CRMEB赋能开发者，助力企业发展 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2016~2021 https://www.crmeb.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed CRMEB并不是自由软件，未经许可不能去掉CRMEB相关版权
+// +----------------------------------------------------------------------
+// | Author: CRMEB Team <admin@crmeb.com>
+// +----------------------------------------------------------------------
+/**
+ * 发送请求
+ */function baseRequest(url, method, data, _ref) {var _ref$noAuth = _ref.noAuth,noAuth = _ref$noAuth === void 0 ? false : _ref$noAuth,_ref$noVerify = _ref.noVerify,noVerify = _ref$noVerify === void 0 ? false : _ref$noVerify;var Url = _app.HTTP_REQUEST_URL_GO;var header = _app.HEADER;
+
+  if (!noAuth) {
+    // 登录过期自动登录
+    if (!_store.default.state.app.token && !(0, _login.checkLogin)()) {
+      (0, _login.toLogin)();
+      return Promise.reject({
+        msg: '未登录' });
+
+    }
+  }
+  if (_store.default.state.app.token) header[_app.TOKENNAME] = 'Bearer ' + _store.default.state.app.token;
+
+  return new Promise(function (reslove, reject) {
+    uni.request({
+      url: Url + '/' + url,
+      method: method || 'GET',
+      header: header,
+      data: data || {},
+      success: function success(res) {
+        if (noVerify) reslove(res.data, res);else
+        if (res.data.status == 200) reslove(res.data, res);else
+        if ([410000, 410001, 410002].indexOf(res.data.status) !== -1) {
+          (0, _login.toLogin)();
+          reject(res.data);
+        } else if (res.data.status == 410010) {
+          uni.showModal({
+            title: '提示',
+            content: res.data.msg,
+            showCancel: false,
+            confirmText: '我知道了' });
+
+        } else reject(res.data.msg || '系统错误');
+      },
+      fail: function fail(msg) {
+        var data = {
+          mag: '请求失败',
+          status: 1 // 1没网
+        };
+
+
+
+
+        reject('请求失败');
+
+      } });
+
+  });
+}
+
+var request = {};
+
+['options', 'get', 'post', 'put', 'head', 'delete', 'trace', 'connect'].forEach(function (method) {
+  request[method] = function (api, data, opt) {return baseRequest(api, method, data, opt || {});};
+});var _default =
+
+request;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
 /***/ 1473:
 /*!**************************************************************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/uni_modules/uni-icons/components/uni-icons/icons.js ***!
@@ -9465,7 +9692,111 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 148:
+/***/ 15:
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+var _app = __webpack_require__(/*! @/config/app */ 16);
+
+
+
+
+var _login = __webpack_require__(/*! ../libs/login */ 9);
+
+
+
+var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 10));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // +----------------------------------------------------------------------
+// | CRMEB [ CRMEB赋能开发者，助力企业发展 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2016~2021 https://www.crmeb.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed CRMEB并不是自由软件，未经许可不能去掉CRMEB相关版权
+// +----------------------------------------------------------------------
+// | Author: CRMEB Team <admin@crmeb.com>
+// +----------------------------------------------------------------------
+/**
+ * 发送请求
+ */function baseRequest(url, method, data, _ref) {var _ref$noAuth = _ref.noAuth,noAuth = _ref$noAuth === void 0 ? false : _ref$noAuth,_ref$noVerify = _ref.noVerify,noVerify = _ref$noVerify === void 0 ? false : _ref$noVerify;var Url = _app.HTTP_REQUEST_URL,header = _app.HEADER;
+
+  if (!noAuth) {
+    //登录过期自动登录
+    if (!_store.default.state.app.token && !(0, _login.checkLogin)()) {
+      (0, _login.toLogin)();
+      return Promise.reject({
+        msg: '未登录' });
+
+    }
+  }
+  if (_store.default.state.app.token) header[_app.TOKENNAME] = 'Bearer ' + _store.default.state.app.token;
+
+  return new Promise(function (reslove, reject) {
+    uni.request({
+      url: Url + '/api/' + url,
+      method: method || 'GET',
+      header: header,
+      data: data || {},
+      success: function success(res) {
+        if (noVerify)
+        reslove(res.data, res);else
+        if (res.data.status == 200)
+        reslove(res.data, res);else
+        if ([410000, 410001, 410002].indexOf(res.data.status) !== -1) {
+          (0, _login.toLogin)();
+          reject(res.data);
+        } else if (res.data.status == 410010) {
+          uni.showModal({
+            title: '提示',
+            content: res.data.msg,
+            showCancel: false,
+            confirmText: '我知道了' });
+
+        } else
+        reject(res.data.msg || '系统错误');
+      },
+      fail: function fail(msg) {
+        var data = {
+          mag: '请求失败',
+          status: 1 //1没网
+        };
+
+
+
+
+        reject('请求失败');
+
+      } });
+
+  });
+}
+
+var request = {};
+
+['options', 'get', 'post', 'put', 'head', 'delete', 'trace', 'connect'].forEach(function (method) {
+  request[method] = function (api, data, opt) {return baseRequest(api, method, data, opt || {});};
+});var _default =
+
+
+
+request;exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 150:
 /*!************************************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/SubscribeMessage.js ***!
   \************************************************************************************/
@@ -9594,7 +9925,7 @@ function subscribe(subscrip443tionmessagee502call) {
 
 /***/ }),
 
-/***/ 149:
+/***/ 151:
 /*!*************************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/lottery.js ***!
   \*************************************************************************/
@@ -9648,110 +9979,6 @@ function getLotteryList(data) {
 
 /***/ }),
 
-/***/ 15:
-/*!***************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-
-
-
-var _app = __webpack_require__(/*! @/config/app */ 16);
-
-
-
-
-var _login = __webpack_require__(/*! ../libs/login */ 9);
-
-
-
-var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 10));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // +----------------------------------------------------------------------
-// | CRMEB [ CRMEB赋能开发者，助力企业发展 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016~2021 https://www.crmeb.com All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed CRMEB并不是自由软件，未经许可不能去掉CRMEB相关版权
-// +----------------------------------------------------------------------
-// | Author: CRMEB Team <admin@crmeb.com>
-// +----------------------------------------------------------------------
-/**
- * 发送请求
- */function baseRequest(url, method, data, _ref) {var _ref$noAuth = _ref.noAuth,noAuth = _ref$noAuth === void 0 ? false : _ref$noAuth,_ref$noVerify = _ref.noVerify,noVerify = _ref$noVerify === void 0 ? false : _ref$noVerify;var Url = _app.HTTP_REQUEST_URL,header = _app.HEADER;
-
-  if (!noAuth) {
-    //登录过期自动登录
-    if (!_store.default.state.app.token && !(0, _login.checkLogin)()) {
-      (0, _login.toLogin)();
-      return Promise.reject({
-        msg: '未登录' });
-
-    }
-  }
-  if (_store.default.state.app.token) header[_app.TOKENNAME] = 'Bearer ' + _store.default.state.app.token;
-
-  return new Promise(function (reslove, reject) {
-    uni.request({
-      url: Url + '/api/' + url,
-      method: method || 'GET',
-      header: header,
-      data: data || {},
-      success: function success(res) {
-        if (noVerify)
-        reslove(res.data, res);else
-        if (res.data.status == 200)
-        reslove(res.data, res);else
-        if ([410000, 410001, 410002].indexOf(res.data.status) !== -1) {
-          (0, _login.toLogin)();
-          reject(res.data);
-        } else if (res.data.status == 410010) {
-          uni.showModal({
-            title: '提示',
-            content: res.data.msg,
-            showCancel: false,
-            confirmText: '我知道了' });
-
-        } else
-        reject(res.data.msg || '系统错误');
-      },
-      fail: function fail(msg) {
-        var data = {
-          mag: '请求失败',
-          status: 1 //1没网
-        };
-
-
-
-
-        reject('请求失败');
-
-      } });
-
-  });
-}
-
-var request = {};
-
-['options', 'get', 'post', 'put', 'head', 'delete', 'trace', 'connect'].forEach(function (method) {
-  request[method] = function (api, data, opt) {return baseRequest(api, method, data, opt || {});};
-});var _default =
-
-
-
-request;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
 /***/ 16:
 /*!************************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/config/app.js ***!
@@ -9764,12 +9991,15 @@ module.exports = {
 
   // 请求域名 格式： https://您的域名
   // HTTP_REQUEST_URL: `https://lsshop.agait.cn`,
-  HTTP_REQUEST_URL: "https://hdshop.agait.cn",
+  // HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
+  HTTP_REQUEST_URL: "https://snacks.agait.cn",
 
 
-  HTTP_REQUEST_URL_GO: "http://192.168.0.88:10123",
+  // HTTP_REQUEST_URL_GO: `http://192.168.0.88:10123`,
+  HTTP_REQUEST_URL_GO: "https://go-snacks.agait.cn",
 
   // H5配置
+
 
 
 
@@ -10187,7 +10417,7 @@ var _default =
 
 /***/ }),
 
-/***/ 203:
+/***/ 205:
 /*!****************************************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/plugin/clipboard/clipboard.js ***!
   \****************************************************************************************/
@@ -11589,7 +11819,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 250:
+/***/ 252:
 /*!***********************************************************************!*\
   !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/admin.js ***!
   \***********************************************************************/
@@ -21091,7 +21321,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"AGA示例2","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -21112,14 +21342,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"AGA示例2","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"AGA示例2","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -21205,7 +21435,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"AGA示例2","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -21616,233 +21846,6 @@ internalMixin(Vue);
 /* harmony default export */ __webpack_exports__["default"] = (Vue);
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/global.js */ 2)))
-
-/***/ }),
-
-/***/ 441:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/go_api.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;exports.GetPayImage = GetPayImage;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 442));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-// 获取列表
-function GetEbSystemStoreList(data) {
-  return _request_go.default.get('v1/EbSystemStore/GetEbSystemStoreList', data);
-}
-
-// 获取列表
-function GetDeliveryTime(data) {
-  return _request_go.default.get('v1/EbSystemDeliveryTime/GetDeliveryTime', data);
-}
-
-// 获取列表
-function GetPayImage(data) {
-  return _request_go.default.get('v1/SystemPayImg/GetPayImage', data);
-}
-
-// /**
-//  * 公共接口 ，优惠券接口 , 行业此讯 , 手机号码注册
-//  *
-//  */
-
-// /**
-//  * 获取主页数据 无需授权
-//  *
-//  */
-
-// export function getIndexData() {
-// 	return request.get('v2/index', {}, {
-// 		noAuth: true
-// 	})
-// }
-
-// /**
-//  * 获取服务器类型
-//  *
-//  */
-
-// export function getServerType() {
-// 	return request.get('v2/site_serve', {}, {
-// 		noAuth: true
-// 	})
-// }
-
-// /**
-//  * 获取登录授权login
-//  *
-//  */
-
-// export function getLogo() {
-// 	return request.get('wechat/get_logo', {}, {
-// 		noAuth: true
-// 	})
-// }
-
-// /**
-//  * 保存form_id
-//  * @param string formId
-//  */
-
-// export function setFormId(formId) {
-// 	return request.post('wechat/set_form_id', {
-// 		formId
-// 	})
-// }
-
-// /**
-//  * 领取优惠卷
-//  * @param int couponId
-//  *
-//  */
-
-// export function setCouponReceive(couponId) {
-// 	return request.post('coupon/receive', {
-// 		couponId
-// 	})
-// }
-
-// /**
-//  * 订单查询物流信息
-//  * @returns {*}
-//  */
-
-// export function express(uni, type) {
-// 	return request.get('order/express/' + uni + `${type ? '/refund' : ''}`)
-// }
-
-// /**
-//  * 获取退款理由
-//  *
-//  */
-
-// export function ordeRefundReason() {
-// 	return request.get('order/refund/reason')
-// }
-
-// /**
-//  * 订单退款审核
-//  * @param object data
-//  */
-
-// export function orderRefundVerify(data) {
-// 	return request.post('order/refund/verify', data)
-// }
-
-// /**
-//  * 订单确认获取订单详细信息
-//  * @param string cartId
-//  */
-
-// export function orderConfirm(cartId, news, addressId) {
-// 	return request.post('order/confirm', {
-// 		cartId,
-// 		'new': news,
-// 		addressId
-// 	})
-// }
-
-/***/ }),
-
-/***/ 442:
-/*!******************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request_go.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
-
-
-
-
-
-
-
-
-var _app = __webpack_require__(/*! @/config/app */ 16);
-
-
-
-
-var _login = __webpack_require__(/*! ../libs/login */ 9);
-
-
-
-var _store = _interopRequireDefault(__webpack_require__(/*! ../store */ 10));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} // +----------------------------------------------------------------------
-// | CRMEB [ CRMEB赋能开发者，助力企业发展 ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2016~2021 https://www.crmeb.com All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed CRMEB并不是自由软件，未经许可不能去掉CRMEB相关版权
-// +----------------------------------------------------------------------
-// | Author: CRMEB Team <admin@crmeb.com>
-// +----------------------------------------------------------------------
-/**
- * 发送请求
- */function baseRequest(url, method, data, _ref) {var _ref$noAuth = _ref.noAuth,noAuth = _ref$noAuth === void 0 ? false : _ref$noAuth,_ref$noVerify = _ref.noVerify,noVerify = _ref$noVerify === void 0 ? false : _ref$noVerify;var Url = _app.HTTP_REQUEST_URL_GO;var header = _app.HEADER;
-
-  if (!noAuth) {
-    // 登录过期自动登录
-    if (!_store.default.state.app.token && !(0, _login.checkLogin)()) {
-      (0, _login.toLogin)();
-      return Promise.reject({
-        msg: '未登录' });
-
-    }
-  }
-  if (_store.default.state.app.token) header[_app.TOKENNAME] = 'Bearer ' + _store.default.state.app.token;
-
-  return new Promise(function (reslove, reject) {
-    uni.request({
-      url: Url + '/' + url,
-      method: method || 'GET',
-      header: header,
-      data: data || {},
-      success: function success(res) {
-        if (noVerify) reslove(res.data, res);else
-        if (res.data.status == 200) reslove(res.data, res);else
-        if ([410000, 410001, 410002].indexOf(res.data.status) !== -1) {
-          (0, _login.toLogin)();
-          reject(res.data);
-        } else if (res.data.status == 410010) {
-          uni.showModal({
-            title: '提示',
-            content: res.data.msg,
-            showCancel: false,
-            confirmText: '我知道了' });
-
-        } else reject(res.data.msg || '系统错误');
-      },
-      fail: function fail(msg) {
-        var data = {
-          mag: '请求失败',
-          status: 1 // 1没网
-        };
-
-
-
-
-        reject('请求失败');
-
-      } });
-
-  });
-}
-
-var request = {};
-
-['options', 'get', 'post', 'put', 'head', 'delete', 'trace', 'connect'].forEach(function (method) {
-  request[method] = function (api, data, opt) {return baseRequest(api, method, data, opt || {});};
-});var _default =
-
-request;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

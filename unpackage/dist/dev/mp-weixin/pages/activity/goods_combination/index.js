@@ -201,7 +201,7 @@ var _activity = __webpack_require__(/*! @/api/activity.js */ 566);
 
 
 
-var _SubscribeMessage = __webpack_require__(/*! ../../../utils/SubscribeMessage.js */ 148);
+var _SubscribeMessage = __webpack_require__(/*! ../../../utils/SubscribeMessage.js */ 150);
 
 
 
