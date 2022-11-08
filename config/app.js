@@ -6,7 +6,8 @@ module.exports = {
 	HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
 	// #endif
 
-	HTTP_REQUEST_URL_GO: `http://192.168.0.88:10123`,
+	// HTTP_REQUEST_URL_GO: `http://192.168.0.88:10123`,
+	HTTP_REQUEST_URL_GO: `https://go-snacks.agait.cn`,
 
 	// H5配置
 	// #ifdef H5

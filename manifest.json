@@ -1,5 +1,5 @@
 {
-    "name" : "AGA示例2",
+    "name" : "零食小程序",
     "appid" : "__UNI__6C47A13",
     "description" : "crmeb商城",
     "versionName" : "1.0.0",
@@ -162,7 +162,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxc09d70be16f37b29",
+        "appid" : "wx8fbef4f331ff9d03",
         "setting" : {
             "urlCheck" : false,
             "minified" : true,
