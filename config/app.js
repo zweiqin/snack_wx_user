@@ -3,7 +3,8 @@ module.exports = {
 	// #ifdef MP || APP-PLUS
 	// 请求域名 格式： https://您的域名
 	// HTTP_REQUEST_URL: `https://lsshop.agait.cn`,
-	HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
+	// HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
+	HTTP_REQUEST_URL: `https://snacks.agait.cn`,
 	// #endif
 
 	// HTTP_REQUEST_URL_GO: `http://192.168.0.88:10123`,
@@ -14,7 +15,8 @@ module.exports = {
 	// H5接口是浏览器地址，非单独部署不用修改
 	// HTTP_REQUEST_URL: window.location.protocol + "//" + window.location.host,
 	// HTTP_REQUEST_URL: `https://lsshop.agait.cn`,
-	HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
+	// HTTP_REQUEST_URL: `https://hdshop.agait.cn`,
+	HTTP_REQUEST_URL: `https://snacks.agait.cn`,
 	// #endif
 
 	// 以下配置在不做二开的前提下,不需要做任何的修改
