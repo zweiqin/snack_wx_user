@@ -512,7 +512,7 @@ export default {
 		GetPayImage({})
 			.then((res) => {
 				console.log(res)
-				this.pay_img = res.data.List
+				this.pay_img = res.data
 				// uni.hideLoading()
 			})
 			.catch((err) =>
