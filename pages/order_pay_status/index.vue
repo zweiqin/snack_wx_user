@@ -38,9 +38,9 @@
 				</view>
 			</view>
 
-			<view class="" style="margin: 20px auto;width: 200px; height: 200px;">
+			<view class="" style="margin: 20px auto;width: 300px;">
 				<image
-					style="background-color: #eeeeee;width: 200px; height: 200px;" :mode="'aspectFit'" :src="pay_img"
+					style="background-color: #eeeeee;width: 300px;" :mode="'widthFix'" :src="pay_img"
 				></image>
 			</view>
 

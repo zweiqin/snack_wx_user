@@ -18,7 +18,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.27.1",
+  "libVersion": "2.27.2",
   "appid": "wx8fbef4f331ff9d03",
   "projectname": "零食小程序",
   "condition": {},
