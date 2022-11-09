@@ -142,7 +142,7 @@
 				</view>
 			</view>
 
-			<view class="" style="margin: 20px auto;width: 300px;">
+			<view v-if="orderInfo.paid==0" class="" style="margin: 20px auto;width: 300px;">
 				<image
 					style="background-color: #eeeeee;width: 300px;" :mode="'widthFix'" :src="pay_img"
 				></image>
@@ -745,6 +745,7 @@ export default {
 			getOrderDetail(this.order_id).then((res) => {
 				const _type = res.data._status._type
 				uni.hideLoading()
+				console.log(res.data)
 				that.$set(that, 'orderInfo', res.data)
 				that.$set(that, 'cartInfo', res.data.cartInfo)
 				that.$set(that, 'pid', res.data.pid)

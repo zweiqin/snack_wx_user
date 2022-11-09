@@ -254,6 +254,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var _order = __webpack_require__(/*! @/api/order.js */ 29);
 
 
@@ -400,56 +417,80 @@ var _color = _interopRequireDefault(__webpack_require__(/*! @/mixins/color.js */
 //
 //
 //
-var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var payment = function payment() {Promise.all(/*! require.ensure | components/payment/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/payment/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/payment */ 1203));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var emptyPage = function emptyPage() {__webpack_require__.e(/*! require.ensure | components/emptyPage */ "components/emptyPage").then((function () {return resolve(__webpack_require__(/*! @/components/emptyPage.vue */ 1245));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { payment: payment, home: home, emptyPage: emptyPage, authorize: authorize }, mixins: [_color.default], data: function data() {return { loading: false, //是否加载中
-      loadend: false, //是否加载完毕
-      loadTitle: '加载更多', //提示语
-      orderList: [], //订单数组
-      orderData: {}, //订单详细统计
-      orderStatus: 0, //订单状态
-      page: 1, limit: 20, payMode: [{ name: '微信支付', icon: 'icon-weixinzhifu', value: 'weixin', title: '使用微信快捷支付', payStatus: true }, { name: '支付宝支付', icon: 'icon-zhifubao', value: 'alipay', title: '使用线上支付宝支付', payStatus: true }, { name: '余额支付', icon: 'icon-yuezhifu', value: 'yue', title: '当前可用余额：', number: 0, payStatus: true }], pay_close: false, pay_order_id: '', totalPrice: '0', isAuto: false, //没有授权的不会自动授权
-      isShowAuth: false //是否隐藏授权
-    };}, computed: (0, _vuex.mapGetters)(['isLogin']), onShow: function onShow() {if (this.isLogin) {this.$set(this, 'orderList', []);this.onLoadFun();} else {(0, _login.toLogin)();}}, methods: { onLoadFun: function onLoadFun() {this.getOrderData();this.getOrderList();this.getUserInfo();}, // 授权关闭
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var home = function home() {Promise.all(/*! require.ensure | components/home/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/home/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/home */ 1142));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var payment = function payment() {Promise.all(/*! require.ensure | components/payment/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/payment/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/payment */ 1203));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var authorize = function authorize() {__webpack_require__.e(/*! require.ensure | components/Authorize */ "components/Authorize").then((function () {return resolve(__webpack_require__(/*! @/components/Authorize */ 1105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var emptyPage = function emptyPage() {__webpack_require__.e(/*! require.ensure | components/emptyPage */ "components/emptyPage").then((function () {return resolve(__webpack_require__(/*! @/components/emptyPage.vue */ 1245));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { payment: payment, home: home, emptyPage: emptyPage, authorize: authorize }, mixins: [_color.default], data: function data() {return { loading: false, // 是否加载中
+      loadend: false, // 是否加载完毕
+      loadTitle: '加载更多', // 提示语
+      orderList: [], // 订单数组
+      orderData: {}, // 订单详细统计
+      orderStatus: 0, // 订单状态
+      page: 1, limit: 20, payMode: [{ name: '微信支付', icon: 'icon-weixinzhifu', value: 'weixin', title: '使用微信快捷支付', payStatus: true }, { name: '支付宝支付', icon: 'icon-zhifubao', value: 'alipay', title: '使用线上支付宝支付', payStatus: true }, { name: '余额支付', icon: 'icon-yuezhifu', value: 'yue', title: '当前可用余额：', number: 0, payStatus: true }], pay_close: false, pay_order_id: '', totalPrice: '0', isAuto: false, // 没有授权的不会自动授权
+      isShowAuth: false // 是否隐藏授权
+    };}, computed: (0, _vuex.mapGetters)(['isLogin']), onShow: function onShow() {// uni.startPullDownRefresh()
+    this.$set(this, 'loadend', false);this.$set(this, 'page', this.page > 1 ? this.page - 1 : this.page);if (this.isLogin) {this.$set(this, 'orderList', []); // setTimeout(this.onLoadFun(), 500)
+      this.onLoadFun();} else {(0, _login.toLogin)();}}, onPullDownRefresh: function onPullDownRefresh() {console.log('refresh');uni.stopPullDownRefresh();}, methods: { onLoadFun: function onLoadFun() {console.log(111);this.getOrderData();this.getOrderList();this.getUserInfo();}, // 授权关闭
     authColse: function authColse(e) {this.isShowAuth = e;}, /**
-                                                              * 事件回调
-                                                              *
-                                                              */onChangeFun: function onChangeFun(e) {var opt = e;var action = opt.action || null;var value = opt.value != undefined ? opt.value : null;action && this[action] && this[action](value);}, /**
-                                                                                                                                                                                                                                                          * 获取用户信息
-                                                                                                                                                                                                                                                          *
-                                                                                                                                                                                                                                                          */getUserInfo: function getUserInfo() {var that = this;(0, _user.getUserInfo)().then(function (res) {that.payMode[2].number = res.data.now_money;that.$set(that, 'payMode', that.payMode);});}, /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                           * 关闭支付组件
-                                                                                                                                                                                                                                                                                                                                                                                                                                                           *
-                                                                                                                                                                                                                                                                                                                                                                                                                                                           */payClose: function payClose() {this.pay_close = false;}, /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * 生命周期函数--监听页面加载
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */onLoad: function onLoad(options) {if (options.status) this.orderStatus = options.status;}, /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     * 获取订单统计数据
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     *
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */getOrderData: function getOrderData() {var _this = this;var that = this;(0, _order.orderData)().then(function (res) {that.$set(that, 'orderData', res.data);that.payMode.map(function (item) {if (item.value == 'weixin') {item.payStatus = res.data.pay_weixin_open ? true : false;}if (item.value == 'alipay') {item.payStatus = res.data.ali_pay_status ? true : false;}if (item.value == 'yue') {item.payStatus = res.data.yue_pay_status == 1 ? true : false;}});_this.payMode[1].payStatus = false;});}, /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       * 取消订单
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       *
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       */cancelOrder: function cancelOrder(index, order_id) {var that = this;if (!order_id) return that.$util.Tips({ title: '缺少订单号无法取消订单' });(0, _order.orderCancel)(order_id).then(function (res) {return that.$util.Tips({ title: res.msg, icon: 'success' }, function () {that.orderList.splice(index, 1);that.$set(that, 'orderList', that.orderList);that.$set(that.orderData, 'unpaid_count', that.orderData.unpaid_count - 1);
+                                                             	 * 事件回调
+                                                             	 *
+                                                             	 */onChangeFun: function onChangeFun(e) {var opt = e;var action = opt.action || null;var value = opt.value != undefined ? opt.value : null;action && this[action] && this[action](value);}, /**
+                                                                                                                                                                                                                                                          	 * 获取用户信息
+                                                                                                                                                                                                                                                          	 *
+                                                                                                                                                                                                                                                          	 */getUserInfo: function getUserInfo() {var that = this;(0, _user.getUserInfo)().then(function (res) {that.payMode[2].number = res.data.now_money;that.$set(that, 'payMode', that.payMode);console.log('getUserInfo');});}, /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       	 * 关闭支付组件
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       	 *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       	 */payClose: function payClose() {this.pay_close = false;}, /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    	 * 生命周期函数--监听页面加载
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    	 */onLoad: function onLoad(options) {if (options.status) this.orderStatus = options.status;}, /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   	 * 获取订单统计数据
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   	 *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   	 */getOrderData: function getOrderData() {var _this = this;var that = this;(0, _order.orderData)().then(function (res) {that.$set(that, 'orderData', res.data);that.payMode.map(function (item) {if (item.value == 'weixin') {item.payStatus = !!res.data.pay_weixin_open;}if (item.value == 'alipay') {item.payStatus = !!res.data.ali_pay_status;}if (item.value == 'yue') {item.payStatus = res.data.yue_pay_status == 1;}});_this.payMode[1].payStatus = false;console.log('getOrderData');});}, /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         	 * 取消订单
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         	 *
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         	 */cancelOrder: function cancelOrder(index, order_id) {var that = this;if (!order_id) {return that.$util.Tips({ title: '缺少订单号无法取消订单' });}(0, _order.orderCancel)(order_id).then(function (res) {return that.$util.Tips({ title: res.msg, icon: 'success' },
+        function () {
+          that.orderList.splice(index, 1);
+          that.$set(that, 'orderList', that.orderList);
+          that.$set(that.orderData, 'unpaid_count', that.orderData.unpaid_count - 1);
           that.getOrderData();
-        });
+        });}).
 
-      }).
-      catch(function (err) {
-        return that.$util.Tips({
-          title: err });
+      catch(function (err) {return that.$util.Tips({
+          title: err });});
 
-      });
     },
+
     /**
-        * 打开支付组件
-        *
-        */
+       	 * 打开支付组件
+       	 *
+       	 */
+
     goPay: function goPay(pay_price, order_id) {
       this.$set(this, 'pay_close', true);
       this.$set(this, 'pay_order_id', order_id);
       this.$set(this, 'totalPrice', pay_price);
     },
+
     /**
-        * 支付成功回调
-        *
-        */
+       	 * 支付成功回调
+       	 *
+       	 */
+
     pay_complete: function pay_complete() {
       this.loadend = false;
       this.page = 1;
@@ -463,22 +504,27 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
       this.getOrderData();
       this.getOrderList();
     },
+
     /**
-        * 支付失败回调
-        *
-        */
+       	 * 支付失败回调
+       	 *
+       	 */
+
     pay_fail: function pay_fail() {
       this.pay_close = false;
       this.pay_order_id = '';
     },
-    /**
-        * 去订单详情
-        */
-    goOrderDetails: function goOrderDetails(order_id) {
-      if (!order_id)
-      return that.$util.Tips({
-        title: '缺少订单号无法查看订单详情' });
 
+    /**
+       	 * 去订单详情
+       	 */
+
+    goOrderDetails: function goOrderDetails(order_id) {
+      if (!order_id) {
+        return that.$util.Tips({
+          title: '缺少订单号无法查看订单详情' });
+
+      }
 
       uni.showLoading({
         title: '正在加载' });
@@ -500,9 +546,11 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
 
 
     },
+
     /**
-        * 切换类型
-        */
+       	 * 切换类型
+       	 */
+
     statusClick: function statusClick(status) {
       if (status == this.orderStatus) return;
       this.orderStatus = status;
@@ -511,13 +559,17 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
       this.$set(this, 'orderList', []);
       this.getOrderList();
     },
+
     /**
-        * 获取订单列表
-        */
+       	 * 获取订单列表
+       	 */
+
     getOrderList: function getOrderList() {
       var that = this;
       if (that.loadend) return;
+      console.log('loadend');
       if (that.loading) return;
+      console.log('loading');
       that.loading = true;
       that.loadTitle = '加载更多';
       (0, _order.getOrderList)({
@@ -534,6 +586,7 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
         that.loading = false;
         that.loadTitle = loadend ? '我也是有底线的' : '加载更多';
         that.page = that.page + 1;
+        console.log('getOrderList');
       }).
       catch(function (err) {
         that.loading = false;
@@ -542,8 +595,9 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
     },
 
     /**
-        * 删除订单
-        */
+       	 * 删除订单
+       	 */
+
     delOrder: function delOrder(order_id, index) {
       var that = this;
       uni.showModal({
@@ -563,18 +617,15 @@ var home = function home() {Promise.all(/*! require.ensure | components/home/ind
                 icon: 'success' });
 
             }).
-            catch(function (err) {
-              return that.$util.Tips({
-                title: err });
+            catch(function (err) {return that.$util.Tips({
+                title: err });});
 
-            });
           } else if (res.cancel) {
             return that.$util.Tips({
               title: '已取消' });
 
           }
         } });
-
 
     } },
 

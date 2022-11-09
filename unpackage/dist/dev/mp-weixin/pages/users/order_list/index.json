@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": false,
   "usingComponents": {
     "payment": "/components/payment/index",
     "home": "/components/home/index",
