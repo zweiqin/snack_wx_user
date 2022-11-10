@@ -95,10 +95,10 @@
 						</view>
 					</view>
 					<view class="bottom acea-row row-right row-middle">
-						<view
+						<!-- <view
 							v-if="item._status._type == 0 || item._status._type == 9" class="bnt cancelBnt"
 							@click="cancelOrder(index, item.order_id)"
-						>取消订单</view>
+						>取消订单</view> -->
 						<view
 							v-if="item._status._type == 0" class="bnt bg-color"
 							@click="goPay(item.pay_price, item.order_id)"

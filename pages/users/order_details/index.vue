@@ -316,7 +316,7 @@
 					<view v-if="invoiceData" class="more-btn" @click="aleartStatusChange">查看发票</view>
 				</view>
 
-				<view v-if="status.type == 0 || status.type == -9" class="qs-btn" @click.stop="cancelOrder">取消订单</view>
+				<!-- <view v-if="status.type == 0 || status.type == -9" class="qs-btn" @click.stop="cancelOrder">取消订单</view> -->
 				<view v-if="status.type==0" class="bnt bg-color" @tap="pay_open(orderInfo.order_id)">立即付款</view>
 				<!-- #ifdef MP -->
 				<view
