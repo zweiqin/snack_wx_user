@@ -84,7 +84,8 @@
 					<view class="con">拒绝原因：{{ orderInfo.refund_reason }}</view>
 				</view>
 				<!-- <view class="writeOff" v-if="orderInfo.shipping_type == 2 && orderInfo.paid"> -->
-				<view v-if="orderInfo.verify_code && orderInfo.paid == 1" class="writeOff">
+				<!-- <view v-if="orderInfo.verify_code && orderInfo.paid == 1" class="writeOff"> -->
+				<view v-if="orderInfo.verify_code && orderInfo.status == 1" class="writeOff">
 					<view class="title">核销信息</view>
 					<view class="grayBg">
 						<view v-if="orderInfo.status == 2" class="written">
