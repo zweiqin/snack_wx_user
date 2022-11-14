@@ -565,27 +565,27 @@ var _default =
       textareaStatus: true,
       // 支付方式
       cartArr: [{
-        // 	"name": "微信支付",
-        // 	"icon": "icon-weixin2",
-        // 	value: 'weixin',
-        // 	title: '使用微信快捷支付',
-        // 	payStatus: 1,
-        // },
-        // {
-        // 	"name": "支付宝支付",
-        // 	"icon": "icon-zhifubao",
-        // 	value: 'alipay',
-        // 	title: '使用线上支付宝支付',
-        // 	payStatus: 1,
-        // },
-        // {
-        // 	"name": "余额支付",
-        // 	"icon": "icon-yuezhifu",
-        // 	value: 'yue',
-        // 	title: '可用余额:',
-        // 	payStatus: 1,
-        // },
-        // {
+        'name': '微信支付',
+        'icon': 'icon-weixin2',
+        'value': 'weixin',
+        'title': '使用微信快捷支付',
+        'payStatus': 1 },
+
+      {
+        'name': '支付宝支付',
+        'icon': 'icon-zhifubao',
+        'value': 'alipay',
+        'title': '使用线上支付宝支付',
+        'payStatus': 1 },
+
+      {
+        'name': '余额支付',
+        'icon': 'icon-yuezhifu',
+        'value': 'yue',
+        'title': '可用余额:',
+        'payStatus': 1 },
+
+      {
         'name': '线下支付',
         'icon': 'icon-yuezhifu1',
         'value': 'offline',

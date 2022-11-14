@@ -143,7 +143,7 @@
 				</view>
 			</view>
 
-			<view v-if="orderInfo.paid==0" class="" style="margin: 20px auto;width: 300px;">
+			<view v-if="orderInfo.paid==0&&orderInfo.pay_type=='offline'" class="" style="margin: 20px auto;width: 300px;">
 				<image
 					style="background-color: #eeeeee;width: 300px;" :mode="'widthFix'" :src="pay_img"
 				></image>

@@ -127,7 +127,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   var g0 =
     _vm.storeInfo.expiration_time &&
-    new Date(_vm.storeInfo.expiration_time).getTime() > new Date().getTime()
+    new Date(_vm.storeInfo.expiration_time).getTime() < new Date().getTime()
   var l0 =
     _vm.attr.productAttr.length && _vm.skuArr.length > 1
       ? _vm.skuArr.slice(0, 4)
