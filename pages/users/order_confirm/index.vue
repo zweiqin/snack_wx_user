@@ -262,7 +262,7 @@
 </template>
 <script>
 import {
-	GetEbSystemStoreList, GetDeliveryTime
+	GetEbSystemStoreList, GetDeliveryTime, GetMinPrice
 } from '@/api/go_api.js'
 import {
 	orderConfirm,
@@ -686,7 +686,7 @@ export default {
 		},
 		goPay() {
 			const that = this
-
+			console.log(this.totalPrice)
 			if (that.shippingType == 0) {
 				if (!that.addressMap.poiaddress && !that.shippingType && !that.virtual_type) {
 					return that.$util.Tips({
@@ -708,8 +708,20 @@ export default {
 						title: '请选择配送时间'
 					})
 				}
+				GetMinPrice({})
+					.then((res) => {
+						console.log(res)
+						if (this.totalPrice < Number(res.data)) {
+							return that.$util.Tips({
+								title: `不满足${res.data}元的配送金额！`
+							})
+						}
+						this.pay_close = true
+					})
+					.catch((err) => this.$util.Tips({ title: err }))
+			} else {
+				this.pay_close = true
 			}
-			this.pay_close = true
 		},
 		payCheck(type) {
 			this.payType = type

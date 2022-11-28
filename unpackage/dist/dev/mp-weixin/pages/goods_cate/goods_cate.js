@@ -1,9 +1,9 @@
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/goods_cate/goods_cate"],{
 
 /***/ 69:
-/*!*************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/main.js?{"page":"pages%2Fgoods_cate%2Fgoods_cate"} ***!
-  \*************************************************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/main.js?{"page":"pages%2Fgoods_cate%2Fgoods_cate"} ***!
+  \**************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19,9 +19,9 @@ wx.__webpack_require_UNI_MP_PLUGIN__ = __webpack_require__;createPage(_goods_cat
 /***/ }),
 
 /***/ 70:
-/*!******************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue ***!
-  \******************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -60,9 +60,9 @@ component.options.__file = "pages/goods_cate/goods_cate.vue"
 /***/ }),
 
 /***/ 71:
-/*!*************************************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=template&id=2fb93f74&scoped=true& ***!
-  \*************************************************************************************************************************************/
+/*!**************************************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=template&id=2fb93f74&scoped=true& ***!
+  \**************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -82,9 +82,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 72:
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=template&id=2fb93f74&scoped=true& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--16-0!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/template.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-uni-app-loader/page-meta.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=template&id=2fb93f74&scoped=true& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns, recyclableRender, components */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -109,9 +109,9 @@ render._withStripped = true
 /***/ }),
 
 /***/ 73:
-/*!*******************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************/
+/*!********************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -125,9 +125,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 74:
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--12-1!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/script.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -168,36 +168,60 @@ var goodsCate1 = function goodsCate1() {Promise.all(/*! require.ensure | pages/g
 
   },
   onLoad: function onLoad() {
+    this.classStyle();
   },
   onReady: function onReady() {
 
   },
-  onShow: function onShow() {
-    this.classStyle();
+  onShow: function onShow() {var _this = this;
+    (0, _api.colorChange)('category').then(function (res) {
+      var status = res.data.status;
+      _this.category = status;
+      if (status == 2) {
+        if (_this.isLogin) {
+          _this.$refs.classTwo.getCartNum();
+          _this.$refs.classTwo.getCartList(1);
+        }
+        // this.$refs.classTwo.getAllCategory()
+      }
+      if (status == 3) {
+        if (_this.isLogin) {
+          _this.$refs.classThree.getCartNum();
+          _this.$refs.classThree.getCartList(1);
+        }
+        // this.$refs.classThree.getAllCategory()
+      }
+      if (status == 2 || status == 3) {
+        uni.hideTabBar();
+      } else {
+        _this.$refs.classOne.getNav();
+        // uni.showTabBar()
+      }
+    });
   },
   methods: {
-    classStyle: function classStyle() {var _this = this;
+    classStyle: function classStyle() {var _this2 = this;
       (0, _api.colorChange)('category').then(function (res) {
         var status = res.data.status;
-        _this.category = status;
+        _this2.category = status;
         if (status == 2) {
-          if (_this.isLogin) {
-            _this.$refs.classTwo.getCartNum();
-            _this.$refs.classTwo.getCartList(1);
+          if (_this2.isLogin) {
+            _this2.$refs.classTwo.getCartNum();
+            _this2.$refs.classTwo.getCartList(1);
           }
-          _this.$refs.classTwo.getAllCategory();
+          _this2.$refs.classTwo.getAllCategory();
         }
         if (status == 3) {
-          if (_this.isLogin) {
-            _this.$refs.classThree.getCartNum();
-            _this.$refs.classThree.getCartList(1);
+          if (_this2.isLogin) {
+            _this2.$refs.classThree.getCartNum();
+            _this2.$refs.classThree.getCartList(1);
           }
-          _this.$refs.classThree.getAllCategory();
+          _this2.$refs.classThree.getAllCategory();
         }
         if (status == 2 || status == 3) {
           uni.hideTabBar();
         } else {
-          _this.$refs.classOne.getNav();
+          _this2.$refs.classOne.getNav();
           // uni.showTabBar()
         }
       });
@@ -216,9 +240,9 @@ var goodsCate1 = function goodsCate1() {Promise.all(/*! require.ensure | pages/g
 /***/ }),
 
 /***/ 75:
-/*!****************************************************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=style&index=0&id=2fb93f74&scoped=true&lang=scss& ***!
-  \****************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=style&index=0&id=2fb93f74&scoped=true&lang=scss& ***!
+  \*****************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -232,9 +256,9 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 76:
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=style&index=0&id=2fb93f74&scoped=true&lang=scss& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js??ref--8-oneOf-1-0!./node_modules/css-loader/dist/cjs.js??ref--8-oneOf-1-1!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-2!./node_modules/postcss-loader/src??ref--8-oneOf-1-3!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/sass-loader/dist/cjs.js??ref--8-oneOf-1-4!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/webpack-preprocess-loader??ref--8-oneOf-1-5!./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib??vue-loader-options!./node_modules/@dcloudio/webpack-uni-mp-loader/lib/style.js!D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages/goods_cate/goods_cate.vue?vue&type=style&index=0&id=2fb93f74&scoped=true&lang=scss& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

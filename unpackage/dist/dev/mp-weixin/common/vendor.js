@@ -1464,7 +1464,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2539,9 +2539,9 @@ uni$1;exports.default = _default;
 /***/ }),
 
 /***/ 10:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/index.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3830,9 +3830,9 @@ module.exports = index_cjs;
 /***/ }),
 
 /***/ 1154:
-/*!*****************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/jyf-parser/libs/MpHtmlParser.js ***!
-  \*****************************************************************************************************/
+/*!******************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/jyf-parser/libs/MpHtmlParser.js ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4417,9 +4417,9 @@ module.exports = MpHtmlParser;
 /***/ }),
 
 /***/ 1155:
-/*!***********************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/jyf-parser/libs/config.js ***!
-  \***********************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/jyf-parser/libs/config.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -4507,9 +4507,9 @@ function makeMap(maprichee55text9oppplugin) {
 /***/ }),
 
 /***/ 1156:
-/*!***************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/jyf-parser/libs/CssHandler.js ***!
-  \***************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/jyf-parser/libs/CssHandler.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4618,9 +4618,9 @@ CssParser = /*#__PURE__*/function () {"use strict";
 /***/ }),
 
 /***/ 1171:
-/*!***************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/mp-html/parser.js ***!
-  \***************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/mp-html/parser.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5772,9 +5772,9 @@ module.exports = parser;
 /***/ }),
 
 /***/ 1186:
-/*!*************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/lottery/js/grids_lottery.js ***!
-  \*************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/lottery/js/grids_lottery.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -5829,9 +5829,9 @@ module.exports = LotteryDraw;
 /***/ }),
 
 /***/ 12:
-/*!*********************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/modules/index.js ***!
-  \*********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/modules/index.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5862,9 +5862,9 @@ var _default = { app: _app.default, hotWords: _hotWords.default, indexData: _ind
 /***/ }),
 
 /***/ 1257:
-/*!*****************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/uni_modules/uni-forms/components/uni-forms/validate.js ***!
-  \*****************************************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/uni_modules/uni-forms/components/uni-forms/validate.js ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6359,9 +6359,9 @@ SchemaValidator;exports.default = _default;
 /***/ }),
 
 /***/ 1258:
-/*!**************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/uni_modules/uni-forms/components/uni-forms/utils.js ***!
-  \**************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/uni_modules/uni-forms/components/uni-forms/utils.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6663,9 +6663,9 @@ var isEqual = function isEqual(a, b) {
 /***/ }),
 
 /***/ 13:
-/*!*******************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/modules/app.js ***!
-  \*******************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/modules/app.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6771,9 +6771,9 @@ var actions = {
 /***/ }),
 
 /***/ 1399:
-/*!******************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/uni-calendar/util.js ***!
-  \******************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/uni-calendar/util.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7109,9 +7109,9 @@ Calendar;exports.default = _default;
 /***/ }),
 
 /***/ 14:
-/*!**********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/user.js ***!
-  \**********************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/user.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7732,9 +7732,9 @@ function agentLevelTaskList(id) {
 /***/ }),
 
 /***/ 1400:
-/*!**********************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/uni-calendar/calendar.js ***!
-  \**********************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/uni-calendar/calendar.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8289,14 +8289,14 @@ calendar;exports.default = _default;
 /***/ }),
 
 /***/ 143:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/go_api.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/go_api.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;exports.GetPayImage = GetPayImage;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 144));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.GetEbSystemStoreList = GetEbSystemStoreList;exports.GetDeliveryTime = GetDeliveryTime;exports.GetPayImage = GetPayImage;exports.GetMinPrice = GetMinPrice;var _request_go = _interopRequireDefault(__webpack_require__(/*! @/utils/request_go.js */ 144));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 // 获取列表
 function GetEbSystemStoreList(data) {
@@ -8311,6 +8311,11 @@ function GetDeliveryTime(data) {
 // 获取列表
 function GetPayImage(data) {
   return _request_go.default.get('v1/SystemPayImg/GetPayImage', data);
+}
+
+// 获取列表
+function GetMinPrice(data) {
+  return _request_go.default.get('v1/SystemDeliveryMin/GetMinPrice', data);
 }
 
 // /**
@@ -8417,9 +8422,9 @@ function GetPayImage(data) {
 /***/ }),
 
 /***/ 144:
-/*!******************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request_go.js ***!
-  \******************************************************************************/
+/*!*******************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/request_go.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8516,9 +8521,9 @@ request;exports.default = _default;
 /***/ }),
 
 /***/ 1473:
-/*!**************************************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/uni_modules/uni-icons/components/uni-icons/icons.js ***!
-  \**************************************************************************************************************/
+/*!***************************************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \***************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9693,9 +9698,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ }),
 
 /***/ 15:
-/*!***************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/request.js ***!
-  \***************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/request.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9797,9 +9802,9 @@ request;exports.default = _default;
 /***/ }),
 
 /***/ 150:
-/*!************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/SubscribeMessage.js ***!
-  \************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/SubscribeMessage.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9926,9 +9931,9 @@ function subscribe(subscrip443tionmessagee502call) {
 /***/ }),
 
 /***/ 151:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/lottery.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/lottery.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9980,9 +9985,9 @@ function getLotteryList(data) {
 /***/ }),
 
 /***/ 16:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/config/app.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/config/app.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10030,9 +10035,9 @@ module.exports = {
 /***/ }),
 
 /***/ 17:
-/*!**************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/config/cache.js ***!
-  \**************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/config/cache.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10081,9 +10086,9 @@ module.exports = {
 /***/ }),
 
 /***/ 18:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/cache.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/cache.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10319,9 +10324,9 @@ new Cache();exports.default = _default;
 /***/ }),
 
 /***/ 19:
-/*!************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/modules/hotWords.js ***!
-  \************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/modules/hotWords.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10382,9 +10387,9 @@ module.exports = g;
 /***/ }),
 
 /***/ 20:
-/*!*************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/modules/indexData.js ***!
-  \*************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/modules/indexData.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10418,9 +10423,9 @@ var _default =
 /***/ }),
 
 /***/ 205:
-/*!****************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/plugin/clipboard/clipboard.js ***!
-  \****************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/plugin/clipboard/clipboard.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11396,9 +11401,9 @@ var _default =
 /***/ }),
 
 /***/ 21:
-/*!***************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/store/getters.js ***!
-  \***************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/store/getters.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11434,9 +11439,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ 22:
-/*!****************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/validate.js ***!
-  \****************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/validate.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11529,9 +11534,9 @@ var Throttle = function Throttle(fn, t) {
 /***/ }),
 
 /***/ 23:
-/*!**************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/libs/routine.js ***!
-  \**************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/libs/routine.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11820,9 +11825,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 252:
-/*!***********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/admin.js ***!
-  \***********************************************************************/
+/*!************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/admin.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12712,9 +12717,9 @@ function orderOrderDelivery() {
 /***/ }),
 
 /***/ 27:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/public.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/public.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12890,9 +12895,9 @@ function getUpdateInfo(type) {
 /***/ }),
 
 /***/ 28:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/libs/wechat.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/libs/wechat.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -12909,9 +12914,9 @@ function getUpdateInfo(type) {
 /***/ }),
 
 /***/ 29:
-/*!***********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/order.js ***!
-  \***********************************************************************/
+/*!************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/order.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13687,9 +13692,9 @@ function resolveLocaleChain(locale) {
 /***/ }),
 
 /***/ 30:
-/*!*********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/api.js ***!
-  \*********************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/api.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14130,9 +14135,9 @@ function getOpenAdv(data) {
 /***/ }),
 
 /***/ 31:
-/*!**************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/mixins/color.js ***!
-  \**************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/mixins/color.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14294,9 +14299,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 35:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/util.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/util.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15206,9 +15211,9 @@ var _index = __webpack_require__(/*! @/plugin/image-tools/index.js */ 36);functi
 /***/ }),
 
 /***/ 36:
-/*!**************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/plugin/image-tools/index.js ***!
-  \**************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/plugin/image-tools/index.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15364,9 +15369,9 @@ function base64ToPath(base64) {
 /***/ }),
 
 /***/ 37:
-/*!***************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/libs/new_chat.js ***!
-  \***************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/libs/new_chat.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15480,9 +15485,9 @@ Socket;exports.default = _default;
 /***/ }),
 
 /***/ 38:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/index.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/index.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15623,9 +15628,9 @@ parseQuery;exports.default = _default;
 /***/ }),
 
 /***/ 39:
-/*!**********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/kefu.js ***!
-  \**********************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/kefu.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21321,7 +21326,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -21342,14 +21347,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -21435,7 +21440,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"零食小程序","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -21850,9 +21855,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 46:
-/*!***********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/store.js ***!
-  \***********************************************************************/
+/*!************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/store.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22076,9 +22081,9 @@ function getPresellProductDetail(id) {
 /***/ }),
 
 /***/ 47:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/libs/order.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/libs/order.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22130,9 +22135,9 @@ function goPage() {
 /***/ }),
 
 /***/ 5:
-/*!*********************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/pages.json ***!
-  \*********************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/pages.json ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -22141,9 +22146,9 @@ function goPage() {
 /***/ }),
 
 /***/ 523:
-/*!**************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/dialog.js ***!
-  \**************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/dialog.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -22160,9 +22165,9 @@ function goPage() {
 /***/ }),
 
 /***/ 566:
-/*!**************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/activity.js ***!
-  \**************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/activity.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22479,9 +22484,9 @@ function getPresellList(data) {
 /***/ }),
 
 /***/ 580:
-/*!***************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/zb-code/qrcode.js ***!
-  \***************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/zb-code/qrcode.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23692,9 +23697,9 @@ QRCode;exports.default = _default;
 /***/ }),
 
 /***/ 66:
-/*!************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/plugin/dayjs/dayjs.min.js ***!
-  \************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/plugin/dayjs/dayjs.min.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23703,9 +23708,9 @@ QRCode;exports.default = _default;
 /***/ }),
 
 /***/ 719:
-/*!****************************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/components/ucharts/ucharts.js ***!
-  \****************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/components/ucharts/ucharts.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29372,9 +29377,9 @@ if ( true && typeof module.exports === "object") {
 /***/ }),
 
 /***/ 814:
-/*!*****************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/api/points_mall.js ***!
-  \*****************************************************************************/
+/*!******************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/api/points_mall.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29405,9 +29410,9 @@ var _request = _interopRequireDefault(__webpack_require__(/*! @/utils/request.js
 /***/ }),
 
 /***/ 83:
-/*!***********************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/mixins/SendVerifyCode.js ***!
-  \***********************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/mixins/SendVerifyCode.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29451,9 +29456,9 @@ var _default =
 /***/ }),
 
 /***/ 9:
-/*!************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/libs/login.js ***!
-  \************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/libs/login.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29601,9 +29606,9 @@ function checkLogin() {
 /***/ }),
 
 /***/ 98:
-/*!*************************************************************************!*\
-  !*** D:/zwq/company-project/2022-10 零食小程序/snack_wx_user/utils/emoji.js ***!
-  \*************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/zwq/company-project/2022-11 零食管理系统/snack_wx_user/utils/emoji.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
